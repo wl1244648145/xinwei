@@ -1,0 +1,8 @@
+---- ethsw Matches (3 in 1 files) ----
+Fsl_p2041.c (d:\工作\xw_2018.03\cardtype\powerpc\codeplatform\bsp\board\p2041\src):        printf("ethsw read reg error, err = %d.\n",err);
+Fsl_p2041.c (d:\工作\xw_2018.03\cardtype\powerpc\codeplatform\bsp\board\p2041\src):        printf("ethsw read reg error, err = %d.\n",err);
+Fsl_p2041.c (d:\工作\xw_2018.03\cardtype\powerpc\codeplatform\bsp\board\p2041\src):        printf("ethsw read reg error, err = %d.\n",err);
+---- ethsw Matches (3 in 1 files) ----
+Fsl_p2041.c (d:\工作\xw_2018.03\cardtype\powerpc\codeplatform\bsp\board\p2041\src):        printf("ethsw read reg error, err = %d.\n",err);
+Fsl_p2041.c (d:\工作\xw_2018.03\cardtype\powerpc\codeplatform\bsp\board\p2041\src):        printf("ethsw read reg error, err = %d.\n",err);
+Fsl_p2041.c (d:\工作\xw_2018.03\cardtype\powerpc\codeplatform\bsp\board\p2041\src):        printf("ethsw read reg error, err = %d.\n",err);

@@ -1,0 +1,288 @@
+Document file - DO NOT EDIT
+
+<BEGIN> BUILD_L3_Lib_BUILDRULE
+archive
+<END>
+
+<BEGIN> BUILD_L3_Lib_MACRO_AR
+arppc
+<END>
+
+<BEGIN> BUILD_L3_Lib_MACRO_ARCHIVE
+$(PRJ_DIR)/L3_Lib/telnet.a
+<END>
+
+<BEGIN> BUILD_L3_Lib_MACRO_AS
+ccppc
+<END>
+
+<BEGIN> BUILD_L3_Lib_MACRO_CC
+ccppc
+<END>
+
+<BEGIN> BUILD_L3_Lib_MACRO_CC_ARCH_SPEC
+-mcpu=604 -mstrict-align
+<END>
+
+<BEGIN> BUILD_L3_Lib_MACRO_CFLAGS
+-g \
+	-mcpu=604 \
+	-mstrict-align \
+	-fno-builtin \
+	-I. \
+	-I$(WIND_BASE)/target/h/ \
+	-DCPU=PPC604 \
+	-DTOOL_FAMILY=gnu \
+	-DTOOL=gnu \
+	-DVXWORKS
+<END>
+
+<BEGIN> BUILD_L3_Lib_MACRO_CFLAGS_AS
+-g \
+	-mcpu=604 \
+	-mstrict-align \
+	-ansi \
+	-fno-builtin \
+	-P \
+	-xassembler-with-cpp \
+	-I. \
+	-I$(WIND_BASE)/target/h/ \
+	-DCPU=PPC604 \
+	-DTOOL_FAMILY=gnu \
+	-DTOOL=gnu
+<END>
+
+<BEGIN> BUILD_L3_Lib_MACRO_CPP
+ccppc -E -P
+<END>
+
+<BEGIN> BUILD_L3_Lib_MACRO_HEX_FLAGS
+
+<END>
+
+<BEGIN> BUILD_L3_Lib_MACRO_LD
+ldppc
+<END>
+
+<BEGIN> BUILD_L3_Lib_MACRO_LDDEPS
+
+<END>
+
+<BEGIN> BUILD_L3_Lib_MACRO_LDFLAGS
+-X -N
+<END>
+
+<BEGIN> BUILD_L3_Lib_MACRO_LD_PARTIAL
+ccppc -r -nostdlib -Wl,-X
+<END>
+
+<BEGIN> BUILD_L3_Lib_MACRO_LD_PARTIAL_FLAGS
+-X -r
+<END>
+
+<BEGIN> BUILD_L3_Lib_MACRO_NM
+nmppc
+<END>
+
+<BEGIN> BUILD_L3_Lib_MACRO_OPTION_DEFINE_MACRO
+-D
+<END>
+
+<BEGIN> BUILD_L3_Lib_MACRO_OPTION_DEPEND
+-M -w
+<END>
+
+<BEGIN> BUILD_L3_Lib_MACRO_OPTION_GENERATE_DEPENDENCY_FILE
+-MD
+<END>
+
+<BEGIN> BUILD_L3_Lib_MACRO_OPTION_INCLUDE_DIR
+-I
+<END>
+
+<BEGIN> BUILD_L3_Lib_MACRO_OPTION_LANG_C
+-xc
+<END>
+
+<BEGIN> BUILD_L3_Lib_MACRO_OPTION_UNDEFINE_MACRO
+-U
+<END>
+
+<BEGIN> BUILD_L3_Lib_MACRO_POST_BUILD_RULE
+
+<END>
+
+<BEGIN> BUILD_L3_Lib_MACRO_PRJ_LIBS
+
+<END>
+
+<BEGIN> BUILD_L3_Lib_MACRO_SIZE
+sizeppc
+<END>
+
+<BEGIN> BUILD_L3_Lib_MACRO_TOOL_FAMILY
+gnu
+<END>
+
+<BEGIN> BUILD_L3_Lib_RO_DEPEND_PATH
+{$(WIND_BASE)/target/h/} \
+	{$(WIND_BASE)/target/src/} \
+	{$(WIND_BASE)/target/config/}
+<END>
+
+<BEGIN> BUILD_L3_Lib_TC
+::tc_PPC604gnu
+<END>
+
+<BEGIN> BUILD_RULE_archive
+
+<END>
+
+<BEGIN> BUILD_RULE_objects
+
+<END>
+
+<BEGIN> BUILD_RULE_telnet.out
+
+<END>
+
+<BEGIN> BUILD_RULE_telnet.pl
+
+<END>
+
+<BEGIN> BUILD__CURRENT
+L3_Lib
+<END>
+
+<BEGIN> BUILD__LIST
+L3_Lib
+<END>
+
+<BEGIN> CORE_INFO_TYPE
+::prj_vxApp
+<END>
+
+<BEGIN> CORE_INFO_VERSION
+2.2
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/telnet/SysOs.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/telnet/SysOs.c_dependencies
+$(PRJ_DIR)/../../../../../prj_bts/layer3/telnet/SysOs.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/telnet/SysOs.c_objects
+SysOs.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/telnet/SysOs.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/telnet/cliShell.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/telnet/cliShell.c_dependencies
+$(PRJ_DIR)/../../../../../prj_bts/layer3/telnet/sysos.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/telnet/msg.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/telnet/cliShell.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/telnet/cliTelnet.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/telnet/cliConfig.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/telnet/cliShell.c_objects
+cliShell.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/telnet/cliShell.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/telnet/cliTelnet.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/telnet/cliTelnet.c_dependencies
+$(PRJ_DIR)/../../../../../prj_bts/layer3/telnet/sysos.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/telnet/msg.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/telnet/cliTelnet.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/telnet/cliShell.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/telnet/cliTelnet.c_objects
+cliTelnet.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/telnet/cliTelnet.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/telnet/ipTask.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/telnet/ipTask.c_dependencies
+$(PRJ_DIR)/../../../../../prj_bts/layer3/telnet/sysos.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/telnet/msg.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/telnet/ipTask.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/telnet/SysOs.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/telnet/ipTask.c_objects
+ipTask.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/telnet/ipTask.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/telnet/sysCmd.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/telnet/sysCmd.c_dependencies
+$(PRJ_DIR)/../../../../../prj_bts/layer3/telnet/sysos.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/telnet/cliConfig.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/telnet/cliShell.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/telnet/sysCmd.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/telnet/sysCmd.c_objects
+sysCmd.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/telnet/sysCmd.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> PROJECT_FILES
+$(PRJ_DIR)/../../../../../prj_bts/layer3/telnet/cliShell.c \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/telnet/cliTelnet.c \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/telnet/ipTask.c \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/telnet/sysCmd.c \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/telnet/SysOs.c
+<END>
+
+<BEGIN> userComments
+<Enter description here>
+<END>
+

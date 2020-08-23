@@ -1,0 +1,16 @@
+
+describe the detail operation for deliver a changes in a project to another project
+
+step 1:  create a private file in dev stream /or check out a file element in the view attached with dev stream in this project
+step 2:  add this private file into soucecontrol
+  step 2.1: create a CRM
+  step 2.2: transfer this crm to status : waiting for merger in CQ
+step 3:  deliver this activity to intergation stream in project
+step 3:  make a baseline with incremental option 
+step 5:  deliver this baseline to a integratio stream in another project
+step 6:  make a baseline in the integration stream in this new project 
+step 7:  rebase stream of dev stream in this new project.
+step 8:  check your view attached with the dev stream in new project. whether file has been changed correctly? 
+
+
+  

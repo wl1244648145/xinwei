@@ -1,0 +1,25 @@
+Document file - DO NOT EDIT
+
+<BEGIN> CORE_INFO_TYPE
+Workspace
+<END>
+
+<BEGIN> CORE_INFO_VERSION
+2.2
+<END>
+
+<BEGIN> projectList
+$(PRJ_DIR)/APFramework/ApFrmWk.wpj \
+	$(PRJ_DIR)/L3_bsp/L3_bsp.wpj \
+	$(PRJ_DIR)/Messages/Messages.wpj \
+	$(PRJ_DIR)/L2If/L2If.wpj \
+	$(PRJ_DIR)/l3data/l3data.wpj \
+	$(PRJ_DIR)/L3_boot/L3_boot.wpj \
+	$(PRJ_DIR)/OAM/l3oam.wpj \
+	$(PRJ_DIR)/tVoice/Voice.wpj \
+	$(PRJ_DIR)/L3_App/L3_App.wpj \
+	$(PRJ_DIR)/Diag/Diag.wpj \
+	$(PRJ_DIR)/telnet/telnet.wpj
+	$(PRJ_DIR)/L2TxInL3/L2TxInL3.wpj
+<END>
+

@@ -1,0 +1,394 @@
+Document file - DO NOT EDIT
+
+<BEGIN> BUILD_PPC604gnu_BUILDRULE
+system.out
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_AR
+arppc
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_ARCHIVE
+$(PRJ_DIR)/PPC604gnu/system.a
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_AS
+ccppc
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_CC
+ccppc
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_CC_ARCH_SPEC
+-mcpu=604 -mstrict-align
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_CFLAGS
+-g \
+	-mcpu=604 \
+	-mstrict-align \
+	-ansi \
+	-fno-builtin \
+	-I. \
+	-I$(WIND_BASE)/target/h/ \
+	-I$(WIND_BASE)/target/config/Mcwill_L3 \
+	-I/prj_mcwill/prj_common/APFramework/H \
+	-I$(WIND_BASE)/target/h/sys \
+	-I$(WIND_BASE)/target/config/all \
+	-I/prj_mcwill/prj_common/APFramework/SRC \
+	-I/prj_mcwill/prj_common \
+	-I$(PRJ_DIR)/../L3_bsp \
+	-I/prj_mcwill/prj_bts/layer3/ARP \
+	-I/prj_mcwill/prj_bts/layer3/Bridge \
+	-I/prj_mcwill/prj_bts/layer3/DM \
+	-I/prj_mcwill/prj_bts/layer3/Snoop \
+	-I/prj_mcwill/prj_bts/layer3/TCR \
+	-I/prj_mcwill/prj_bts/layer3/TDR \
+	-I/prj_mcwill/prj_bts/layer3/Tunnel \
+	-I/prj_mcwill/prj_bts/layer3/COMMON \
+	-I/prj_mcwill/prj_bts/layer3/messages/Data \
+	-I/prj_mcwill/prj_bts/common/PciIf \
+	-I/prj_mcwill/prj_bts/bts_bsp/src \
+	-I/prj_mcwill/prj_bts/common/h \
+	-DCPU=PPC604 \
+	-DTOOL_FAMILY=gnu \
+	-DTOOL=gnu \
+	-DM_TGT_L3 \
+	-DPRJ_BUILD \
+	-DNDEBUG \
+	-fsigned-char \
+	-DPRJ_BUILD \
+	-DBOOT_L2
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_CFLAGS_AS
+-g \
+	-mcpu=604 \
+	-mstrict-align \
+	-ansi \
+	-fno-builtin \
+	-P \
+	-xassembler-with-cpp \
+	-I. \
+	-I$(WIND_BASE)/target/h/ \
+	-DCPU=PPC604 \
+	-DTOOL_FAMILY=gnu \
+	-DTOOL=gnu
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_CPP
+ccppc -E -P
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_HEX_FLAGS
+
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_LD
+ldppc
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_LDFLAGS
+-X -N -Map system.map
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_LD_PARTIAL
+ccppc -r -nostdlib -Wl,-X
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_LD_PARTIAL_FLAGS
+-X -r
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_NM
+nmppc
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_OPTION_DEFINE_MACRO
+-D
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_OPTION_DEPEND
+-M -w
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_OPTION_GENERATE_DEPENDENCY_FILE
+-MD
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_OPTION_INCLUDE_DIR
+-I
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_OPTION_LANG_C
+-xc
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_OPTION_UNDEFINE_MACRO
+-U
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_POST_BUILD_RULE
+
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_PRJ_LIBS
+$(PRJ_DIR)/../L2If/L3_lib/L2If.a \
+	$(PRJ_DIR)/../DM\PPC604\dm.a \
+	$(PRJ_DIR)/../EB\PPC604\eb.a \
+	$(PRJ_DIR)/../Snoop\PPC604\snoop.a \
+	$(PRJ_DIR)/../TCR\PPC604\tcr.a \
+	$(PRJ_DIR)/../TDR\PPC604\tdr.a \
+	$(PRJ_DIR)/../Tunnel\PPC604\tunnel.a \
+	$(PRJ_DIR)/../ARP\PPC604\arp.a \
+	$(PRJ_DIR)/../Messages\PPC604\Messages.a \
+	$(PRJ_DIR)/../APFramework\L3_lib\ApFrmWk.a \
+	
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_SIZE
+sizeppc
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_TOOL_FAMILY
+gnu
+<END>
+
+<BEGIN> BUILD_PPC604gnu_RO_DEPEND_PATH
+{$(WIND_BASE)/target/h/} \
+	{$(WIND_BASE)/target/src/} \
+	{$(WIND_BASE)/target/config/}
+<END>
+
+<BEGIN> BUILD_PPC604gnu_TC
+::tc_PPC604gnu
+<END>
+
+<BEGIN> BUILD_RULE_archive
+
+<END>
+
+<BEGIN> BUILD_RULE_objects
+
+<END>
+
+<BEGIN> BUILD_RULE_system.out
+
+<END>
+
+<BEGIN> BUILD_RULE_system.pl
+
+<END>
+
+<BEGIN> BUILD__CURRENT
+lib
+<END>
+
+<BEGIN> BUILD__LIST
+PPC604gnu lib
+<END>
+
+<BEGIN> BUILD_lib_BUILDRULE
+archive
+<END>
+
+<BEGIN> BUILD_lib_MACRO_AR
+arppc
+<END>
+
+<BEGIN> BUILD_lib_MACRO_ARCHIVE
+$(PRJ_DIR)/lib/system.a
+<END>
+
+<BEGIN> BUILD_lib_MACRO_AS
+ccppc
+<END>
+
+<BEGIN> BUILD_lib_MACRO_CC
+ccppc
+<END>
+
+<BEGIN> BUILD_lib_MACRO_CC_ARCH_SPEC
+-mcpu=604 -mstrict-align
+<END>
+
+<BEGIN> BUILD_lib_MACRO_CFLAGS
+-g \
+	-mcpu=604 \
+	-mstrict-align \
+	-ansi \
+	-fno-builtin \
+	-I. \
+	-I$(WIND_BASE)/target/h/ \
+	-I/prj_mcwill/prj_common/APFramework/H \
+	-I$(WIND_BASE)/target/h/sys \
+	-I$(WIND_BASE)/target/config/Mcwill_L3 \
+	-I$(WIND_BASE)/target/config/all \
+	-I/prj_mcwill/prj_common/APFramework/SRC \
+	-I/prj_mcwill/prj_common \
+	-I$(PRJ_DIR)/../L3_bsp \
+	-I/prj_mcwill/prj_bts/common/PciIf \
+	-DCPU=PPC604 \
+	-DTOOL_FAMILY=gnu \
+	-DTOOL=gnu \
+	-DM_TGT_L3 \
+	-DNDEBUG \
+	-DBOOT_L2
+<END>
+
+<BEGIN> BUILD_lib_MACRO_CFLAGS_AS
+-g \
+	-mcpu=604 \
+	-mstrict-align \
+	-ansi \
+	-fno-builtin \
+	-P \
+	-xassembler-with-cpp \
+	-I. \
+	-I$(WIND_BASE)/target/h/ \
+	-DCPU=PPC604 \
+	-DTOOL_FAMILY=gnu \
+	-DTOOL=gnu
+<END>
+
+<BEGIN> BUILD_lib_MACRO_CPP
+ccppc -E -P
+<END>
+
+<BEGIN> BUILD_lib_MACRO_HEX_FLAGS
+
+<END>
+
+<BEGIN> BUILD_lib_MACRO_LD
+ldppc
+<END>
+
+<BEGIN> BUILD_lib_MACRO_LDFLAGS
+-X -N
+<END>
+
+<BEGIN> BUILD_lib_MACRO_LD_PARTIAL
+ccppc -r -nostdlib -Wl,-X
+<END>
+
+<BEGIN> BUILD_lib_MACRO_LD_PARTIAL_FLAGS
+-X -r
+<END>
+
+<BEGIN> BUILD_lib_MACRO_NM
+nmppc
+<END>
+
+<BEGIN> BUILD_lib_MACRO_OPTION_DEFINE_MACRO
+-D
+<END>
+
+<BEGIN> BUILD_lib_MACRO_OPTION_DEPEND
+-M -w
+<END>
+
+<BEGIN> BUILD_lib_MACRO_OPTION_GENERATE_DEPENDENCY_FILE
+-MD
+<END>
+
+<BEGIN> BUILD_lib_MACRO_OPTION_INCLUDE_DIR
+-I
+<END>
+
+<BEGIN> BUILD_lib_MACRO_OPTION_LANG_C
+-xc
+<END>
+
+<BEGIN> BUILD_lib_MACRO_OPTION_UNDEFINE_MACRO
+-U
+<END>
+
+<BEGIN> BUILD_lib_MACRO_POST_BUILD_RULE
+
+<END>
+
+<BEGIN> BUILD_lib_MACRO_PRJ_LIBS
+
+<END>
+
+<BEGIN> BUILD_lib_MACRO_SIZE
+sizeppc
+<END>
+
+<BEGIN> BUILD_lib_MACRO_TOOL_FAMILY
+gnu
+<END>
+
+<BEGIN> BUILD_lib_RO_DEPEND_PATH
+{$(WIND_BASE)/target/h/} \
+	{$(WIND_BASE)/target/src/} \
+	{$(WIND_BASE)/target/config/}
+<END>
+
+<BEGIN> BUILD_lib_TC
+::tc_PPC604gnu
+<END>
+
+<BEGIN> CORE_INFO_TYPE
+::prj_vxApp
+<END>
+
+<BEGIN> CORE_INFO_VERSION
+2.2
+<END>
+
+<BEGIN> FILE_/prj_mcwill/prj_bts/layer3/System/main.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_/prj_mcwill/prj_bts/layer3/System/main.cpp_dependencies
+/prj_mcwill/prj_common/APFramework/H/stdhdr.h \
+	/prj_mcwill/prj_common/APFramework/H/types.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	/prj_mcwill/prj_common/APFramework/H/Log.h \
+	/prj_mcwill/prj_common/APFramework/H/BizTask.h \
+	/prj_mcwill/prj_common/APFramework/H/Task.h \
+	/prj_mcwill/prj_common/APFramework/H/ComEntity.h \
+	/prj_mcwill/prj_common/APFramework/H/Object.h \
+	/prj_mcwill/prj_common/APFramework/H/Mutex.h \
+	/prj_mcwill/prj_common/APFramework/H/taskdef.h \
+	/prj_mcwill/prj_common/APFramework/H/PtrList.h
+<END>
+
+<BEGIN> FILE_/prj_mcwill/prj_bts/layer3/System/main.cpp_objects
+main.o
+<END>
+
+<BEGIN> FILE_/prj_mcwill/prj_bts/layer3/System/main.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_/prj_mcwill/prj_bts/layer3/System/preLoader.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_/prj_mcwill/prj_bts/layer3/System/preLoader.cpp_dependencies
+$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(PRJ_DIR)/../L3_bsp/prjParams.h
+<END>
+
+<BEGIN> FILE_/prj_mcwill/prj_bts/layer3/System/preLoader.cpp_objects
+preLoader.o
+<END>
+
+<BEGIN> FILE_/prj_mcwill/prj_bts/layer3/System/preLoader.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> PROJECT_FILES
+/prj_mcwill/prj_bts/layer3/System/main.cpp \
+	/prj_mcwill/prj_bts/layer3/System/preLoader.cpp
+<END>
+
+<BEGIN> userComments
+<Enter description here>
+<END>
+

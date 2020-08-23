@@ -1,0 +1,49 @@
+Traceback (most recent call last):
+  File "PLTTest.py", line 11, in <module>
+  File "<frozen importlib._bootstrap>", line 1567, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1534, in _find_and_load_unlocked
+  File "E:\eBBU\ver\版本号\备份\PLAT_TEST_PUBLIC_20170621\emsServer.py", line 24, in <module>
+  File "<frozen importlib._bootstrap>", line 1567, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1534, in _find_and_load_unlocked
+  File "E:\eBBU\ver\版本号\备份\PLAT_TEST_PUBLIC_20170621\myGUI_grid_eBBU.py", line 442, in <module>
+  File "E:\eBBU\ver\版本号\备份\PLAT_TEST_PUBLIC_20170621\myGUI_grid_eBBU.py", line 42, in __init__
+  File "C:\Python33\lib\tkinter\tix.py", line 214, in __init__
+  File "C:\Python33\lib\tkinter\__init__.py", line 1789, in __init__
+_tkinter.TclError: Can't find a usable tk.tcl in the following directories: 
+    {C:\xuqiang\工作\xinwei\CardType\PLAT_TES\tag\1.0\dist\tcl\tk8.5} C:/xuqiang/工作/xinwei/CardType/PLAT_TES/tag/1.0/dist/tcl/tcl8.5/tk8.5 C:/xuqiang/工作/xinwei/CardType/PLAT_TES/tag/1.0/lib/tk8.5 C:/xuqiang/工作/xinwei/CardType/PLAT_TES/tag/lib/tk8.5 C:/xuqiang/工作/xinwei/CardType/PLAT_TES/tag/1.0/library
+
+C:/xuqiang/工作/xinwei/CardType/PLAT_TES/tag/1.0/dist/tcl/tk8.5/tk.tcl: couldn't read file "C:/xuqiang/工作/xinwei/CardType/PLAT_TES/tag/1.0/dist/tcl/tk8.5/panedwindow.tcl": no such file or directory
+couldn't read file "C:/xuqiang/工作/xinwei/CardType/PLAT_TES/tag/1.0/dist/tcl/tk8.5/panedwindow.tcl": no such file or directory
+    while executing
+"source C:/xuqiang/工作/xinwei/CardType/PLAT_TES/tag/1.0/dist/tcl/tk8.5/panedwindow.tcl"
+    (in namespace eval "::" script line 1)
+    invoked from within
+"namespace eval :: [list source [file join $::tk_library $file.tcl]]"
+    (procedure "SourceLibFile" line 2)
+    invoked from within
+"SourceLibFile panedwindow"
+    (in namespace eval "::tk" script line 6)
+    invoked from within
+"namespace eval ::tk {
+	SourceLibFile button
+	SourceLibFile entry
+	SourceLibFile listbox
+	SourceLibFile menu
+	SourceLibFile panedwindow
+	SourceLibFile ..."
+    invoked from within
+"if {$::tk_library ne ""} {
+    proc ::tk::SourceLibFile {file} {
+        namespace eval :: [list source [file join $::tk_library $file.tcl]]
+    }
+   ..."
+    (file "C:/xuqiang/工作/xinwei/CardType/PLAT_TES/tag/1.0/dist/tcl/tk8.5/tk.tcl" line 411)
+    invoked from within
+"source C:/xuqiang/工作/xinwei/CardType/PLAT_TES/tag/1.0/dist/tcl/tk8.5/tk.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel #0 [list source $file]"
+
+
+This probably means that tk wasn't installed properly.
+

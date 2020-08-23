@@ -1,0 +1,91 @@
+#ifndef __BSP_INTERRUPT_H
+#define __BSP_INTERRUPT_H
+#include "bsp_types.h"
+
+#define KDA_DEVICE_NAME "/dev/KernDrvAgt"
+#define KDA_MAJOR 10  /*Misc Drive Major*/
+#define KDA_MINOR 244
+#define KDA_SUCCESS       0
+#define KDA_ERROR         1
+#define KDA_TIMEOUT       2
+#define KDA_SIGOUT        3   /*等待状态中，被信号打断*/
+#define KDA_FAULT         4   /*内存访问错误*/
+#define KDA_OBJ_DELETE    5   /*对象被删除*/
+      
+int    g_iKdaDrvFd = -1;
+int    siMemDrvFd = -1;
+#define MEM_DEVICE_NAME "/dev/mem"
+
+typedef struct  {
+    ULONG dev_id; /* Device ID */
+    ULONG rs;  /* Operation Return Status */
+    ULONG rv; /* Operation Return Value*/
+    ULONG d0;  /* Operation specific data */
+    ULONG d1;
+    ULONG d2;
+    ULONG d3;
+    ULONG dx[17];
+}kda_ioctl_t;
+
+#define KDA_CMD_MAGIC 0x44410000
+#define _KDA_CMD(magic,num) (KDA_CMD_MAGIC + num)
+enum
+{  
+    /*INT CMD*/
+    KDA_INTERRUPT_REQUEST=0,
+    KDA_INTERRUPT_FREE,
+    KDA_INTERRUPT_ENABLE,
+    KDA_INTERRUPT_DISABLE,
+    KDA_WAIT_FOR_INTERRUPT,
+    KDA_INTERRUPT_LOCK,
+    KDA_INTERRUPT_UNLOCK,
+    /*MISC cmd*/
+    KDA_GET_SCHE_TIME,
+    /*MUX CMDS*/
+	  KDA_DEV_MUX_INIT,
+	  KDA_DEV_MUX_BIND,
+	  KDA_DEV_MUX_RCV,
+	  KDA_DEV_MUX_TX,
+	  KDA_DEV_MUX_FREE,
+	  KDA_DEV_MUX_SEND,
+	  KDA_MUX_TX_ALLOC,
+	  KDA_MUX_RX_START,
+	  KDA_MUX_TX_FREE,
+	  KDA_MUX_RX_MMAP,
+    KDA_WRITE_FLASH,
+    KDA_FLASH_MUTEX_DISABLE,
+    KDA_FLASH_MUTEX_ENABLE,
+    KDA_GET_INT_MEM,
+	  KDA_FREE_INT_MEM,
+    KDA_SET_GPIO_MASK,
+	  KDA_TEST_INFO,
+	  KDA_INIT_GPIO_RESEND,
+	  KDA_REINIT_GPIO_MASK,
+};
+
+#define KDA_NR_IRQS        1000
+ 
+typedef struct __tag_Act_Irq
+{
+    ULONG   IrqCnt;
+    ULONG   IrqStat;
+    ULONG   IrqReserved[5];  /*预留*/
+    ULONG  IrqNumArray[KDA_NR_IRQS]; 
+}kda_act_irq_t;
+
+static ULONG kda_mult_int_mem_addr = 0;
+typedef void (*kda_irq_func_t)(void*);
+typedef struct 
+{
+    void *data;
+    kda_act_irq_t      *s_tActIrq; //add
+}kda_handler_parm_t;
+
+typedef struct 
+{
+    kda_handler_parm_t handler_parm_t;
+    kda_irq_func_t handler;
+    UINT32 vector;
+}kda_irq_handler_t;
+
+#endif /* BSP_H */

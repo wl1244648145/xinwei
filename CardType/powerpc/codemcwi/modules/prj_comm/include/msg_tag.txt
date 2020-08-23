@@ -1,0 +1,9 @@
+
+#ifdef MEM_LEAK_DEBUG
+	frkSetMsgTag(msg,MSG_TAG(XXXXXX));
+#endif	    
+
+#ifdef MEM_LEAK_DEBUG
+	set_tag_for_newed_mem_blk(pBuf,MSG_TAG(XXXXXX));
+#endif
+

@@ -1,0 +1,221 @@
+/*******************************************************************************
+* *  COPYRIGHT XINWEI Communications Equipment CO.,LTD
+********************************************************************************
+* 文件名称:  cps1616.h
+* 功    能:  
+* 版    本:  V0.1
+* 编写日期:  2015/06/26
+* 说    明:  无
+* 修改历史:
+* 修改日期           修改人  liuganga 修改内容
+*------------------------------------------------------------------------------
+*------------------------------------------------------------------------------
+*                                                         创建文件
+*
+*
+*******************************************************************************/
+/******************************** 头文件保护开头 ******************************/
+
+#ifndef __BSP_HMI_H__
+#define __BSP_HMI_H__
+#include "../../../com_inc/bsp_types.h"
+
+
+#define IPMB_MCT_HMI1_I2C_ADDR         (0x20)
+#define IPMB_MCT_HMI2_I2C_ADDR         (0x30)
+#define IPMB_BBP_HMI1_I2C_ADDR         (0x22)
+#define IPMB_BBP_HMI2_I2C_ADDR         (0x32)
+#define IPMB_GES_HMI1_I2C_ADDR         (0x26)
+#define IPMB_GES_HMI2_I2C_ADDR         (0x36)
+#define IPMB_FAN_HMI1_I2C_ADDR         (0x2a)
+#define IPMB_FAN_HMI2_I2C_ADDR         (0x3a)
+/* 
+定义IPMB的命令号：
+公共命令区:0x01~~0x1f 
+主控板的命令区域:0x20~~~0x52
+基带板的命令区域:0x53~~~0x85
+交换板的命令区域:0x86~~~0xb8 
+风扇板的命令区域:0xb9~~~0xeb
+保留:0xec~~0xff
+*/
+
+/*定义公共命令区*/
+#define IPMB_CMD_COMM_RESET_BOARD              (0x01)
+#define IPMB_CMD_COMM_STOP_WATCHDOG            (0x02)
+#define IPMB_CMD_COMM_ALIVE_CMD                (0x1F)
+
+/*定义主控板命令区*/
+#define IPMB_CMD_MAINBANDCTL_TEMP              (0x53)/*获取主控温度*/
+
+
+/*定义基带板命令区*/
+#define IPMB_CMD_BASEBANDCTL_WRITE_FPGA        (0x53)/*写fpga寄存器*/
+#define IPMB_CMD_BASEBANDCTL_READ_FPGA         (0x54)/*读fpga寄存器*/
+#define IPMB_CMD_BASEBANDCTL_WRITE_EPLD        (0x55)/*写epld寄存器*/
+#define IPMB_CMD_BASEBANDCTL_READ_EPLD         (0x56)/*读epld寄存器*/
+#define IPMB_CMD_BASEBANDCTL_GET_CPU_VER       (0x57)/*获取arm版本号*/
+#define IPMB_CMD_BASEBANDCTL_GET_TEMP          (0x58)/*获取基带板温度*/
+
+#define IPMB_CMD_BASEBANDCTL_RESET_DSP0        (0x59)/*复位dsp0*/
+#define IPMB_CMD_BASEBANDCTL_RESET_DSP1        (0x5A)/*复位dsp1*/
+#define IPMB_CMD_BASEBANDCTL_RESET_DSP2        (0x5B)/*复位dsp2*/
+#define IPMB_CMD_BASEBANDCTL_RESET_DSP3        (0x5C)/*复位dsp3*/
+#define IPMB_CMD_BASEBANDCTL_RESET_SRIOSW      (0x5D)/*复位srio sw*/
+#define IPMB_CMD_BASEBANDCTL_RESET_GESW        (0x5E)/*复位ge sw*/
+#define IPMB_CMD_BASEBANDCTL_GET_SRIOSW_INFO   (0x70)/*获取srio路由信息*/
+
+#define IPMB_CMD_BASEBANDCTL_POWER_ON          (0x80)/*单板上电*/
+#define IPMB_CMD_BASEBANDCTL_POWER_OFF         (0x81)/*单板下电*/
+
+#define IPMB_CMD_BASEBANDCTL_SEND_PACK_OK_CNT  (0x82)/*发送报文成功数统计*/
+#define IPMB_CMD_BASEBANDCTL_SEND_PACK_ERR_CNT (0x83)/*发送报文失败数统计*/
+#define IPMB_CMD_BASEBANDCTL_RECV_PACK_OK_CNT  (0x84)/*接收报文成功数统计*/
+#define IPMB_CMD_BASEBANDCTL_RECV_PACK_ERR_CNT (0x85)/*接收报文失败数统计*/
+
+
+/*定义交换板命令区*/
+#define IPMB_CMD_SWITCHCTL_RESET_GESW          (0x86)/*复位ge sw*/
+#define IPMB_CMD_SWITCHCTL_GET_ARM_VER_VAL     (0x87)/*获取arm版本号*/
+#define IPMB_CMD_SWITCHCTL_POWER_ON            (0x88)/*单板上电*/
+#define IPMB_CMD_SWITCHCTL_POWER_OFF           (0x89)/*单板下电*/
+
+#define IPMB_CMD_SWITCHCTL_SEND_PACK_OK_CNT    (0xB5)/*发送报文成功数统计*/
+#define IPMB_CMD_SWITCHCTL_SEND_PACK_ERR_CNT   (0xB6)/*发送报文失败数统计*/
+#define IPMB_CMD_SWITCHCTL_RECV_PACK_OK_CNT    (0xB7)/*接收报文成功数统计*/
+#define IPMB_CMD_SWITCHCTL_RECV_PACK_ERR_CNT   (0xB8)/*接收报文失败数统计*/
+
+/*定义风扇板命令区*/
+#define IPMB_CMD_FANCTL_SET_SPEED              (0xB9)/*设置风扇转速*/
+#define IPMB_CMD_FANCTL_GET_SPEED              (0xBA)/*获取风扇转速*/
+#define IPMB_CMD_FANCTL_SEND_EXCEPTION         (0xBB)/*获取异常信息*/
+#define IPMB_CMD_FANCTL_GET_ARM_VER_VAL        (0xBC)/*获取arm版本号*/
+#define IPMB_CMD_FANCTL_POWER_ON               (0xBD)/*单板上电*/
+#define IPMB_CMD_FANCTL_POWER_OFF              (0xBE)/*单板下电*/
+#define IPMB_CMD_FANCTL_SEND_PACK_OK_CNT       (0xBF)/*发送报文成功数统计*/
+#define IPMB_CMD_FANCTL_SEND_PACK_ERR_CNT      (0xC0)/*发送报文失败数统计*/
+#define IPMB_CMD_FANCTL_RECV_PACK_OK_CNT       (0xC1)/*接收报文成功数统计*/
+#define IPMB_CMD_FANCTL_RECV_PACK_ERR_CNT      (0xC2)/*接收报文失败数统计*/
+
+
+#define IPMB_RECEIVE_TASK_LENGTH       (512)      
+#define WAIT_FOREVER              0
+#define E_SPI_ERROR           0x20000000
+#define E_ARG_ERROE           0x01
+#define E_OS_SEM_CREATE       0x01
+#define E_OS_MSGQ_CREATE      0x02
+#define E_OS_TASK_CREATE      0x03
+#define E_OS_SEM_PEND         0x04
+#define E_OS_SEM_POST         0x05
+#define E_OS_TIME_OUT         0x06
+#define E_IPMB_IOCTL_ARG_NULL 0x07
+#define E_IPMB_SEND_FULL      0x08
+#define E_IPMB_SEND_FAIL      0x09
+#define E_IPMB_IOCTL_CMD_NULL 0x0A
+#define E_SPI_SEND_TIMEOUT    0x0B
+#define E_SPI_RECEIVE_TIMEOUT 0x0C
+
+#define OSP_OK                0
+#define OSP_ERR               1
+
+/* 请求消息 */
+#define RSADDR_BYTE         (0x00)
+#define NETFN_BYTE          (0x01)
+#define CHECK_BYTE          (0x02)
+#define RQADDR_BYTE         (0x03)
+#define SEQNO_BYTE          (0x04)
+#define CMD_BYTE            (0x05)
+#define COMPLETE_BYTE       (0x06)
+/* 响应消息 */
+#define CCODE_BYTE          (6)
+#define DATASTART_BYTE      (7)
+#define TASK_PRI                       10                // 起始优先级
+#define ARM_START_TASK_PRI             TASK_PRI+1       // ARM起始任务的优先级
+#define ARM_HEART_TASK_PRI             TASK_PRI+2       // 心跳任务的优先级
+#define IPMB_RECEIVE_TASK_PRI          TASK_PRI+3       // IPMB接收任务的优先级
+#define I2C_RECEIVE_TASK_PRI           TASK_PRI+4       // I2C接收任务的优先级
+#define ARM_UDP_TASK_PRI               TASK_PRI+5       // UDP服务器任务的优先级
+#define ARM_HSI_DOWNLOAD_TASK_PRI      TASK_PRI+6       // 大规模数据接收任务的优先级
+#define HWM_INT_TASK_PRI               TASK_PRI+7
+#define OS_NO_ERR                      0
+#define IPMB_CHANNEL_IIC_0             0
+#define IPMB_CHANNEL_IIC_1             1
+#define IPMB_CHANNEL_IIC_2             2
+#define IPMB_CHANNEL_IIC_3             3
+
+/* 状态定义 */
+#define STATUS_WAIT_RESPOND    0x01
+#define STATUS_RECEIVE_RESPOND 0x02
+#define IPMB_RECEIVE_BUF_NUM         (30)  /* 接收消息数组的最大长度                   */
+#define IPMB_SEND_BUF_NUM            (2)  /* 发送消息数组的最大长度                   */
+#define IPMB_QUEUE_BUF_NUM           (100)  /* 接收消息数组的最大长度                   */
+#define NETFN_IPMB_REQUEST           (0x30 << 2)
+#define NETFN_IPMB_RESPONSE          (NETFN_IPMB_REQUEST + 4)
+
+
+#define IPMB_MESSAGE_MAX_LENGTH    1<<10   /* IPMB消息的最大长度(字节)                 */
+#define IPMB_MESSAGE_DATA_LENGTH   32      /* IPMB应答消息中的数据部分的最大长度(字节) */
+
+/* 接收消息数组定义 */
+typedef struct Tag_STRU_RECV_MESSAGE
+{
+    UINT8            u8Used;                                 /* 是否使用             */
+    UINT8            u8Length;                               /* 长度                 */
+    UINT8            u8Message[IPMB_MESSAGE_MAX_LENGTH];     /* 保存接收到的消息     */
+} STRU_RECV_MESSAGE;
+
+
+/* 发送消息数组定义 */
+typedef struct tag_STRU_SEND_MESSAGE
+{
+    UINT8            u8Used;                                /* 是否使用                     */
+    UINT8            u8Seq;		                             /* 请求消息的序列号             */
+    UINT8            u8Status;                              /* 发送请求消息的任务的状态     */
+    UINT8            u8Data[IPMB_MESSAGE_DATA_LENGTH];      /* 保存应答消息中的数据部分     */
+//	OS_EVENT*        semID;                                 /* 接收到应答消息后激活的信号量 */
+} STRU_SEND_MESSAGE;
+
+/* 接收消息数组定义 */
+typedef struct tag_STRU_RESERVE_MESSAGE
+{
+    UINT8            u8Used;                                 /* 是否使用             */
+    UINT8            u8Length;                               /* 长度                 */
+    UINT8            u8Message[IPMB_MESSAGE_MAX_LENGTH];     /* 保存接收到的消息     */
+} STRU_RESERVE_MESSAGE;
+
+typedef struct tag_STRU_QUEUE_SEND
+{
+    UINT8            u8Used;                                 /* 是否使用             */  
+    UINT8            u8Pri;
+    UINT8            u8Channel;
+    UINT8            u8I2cAddress; 
+    UINT8            u8Length;                               /* 长度                 */  	
+	  UINT8            u8Message[IPMB_MESSAGE_MAX_LENGTH];     /* 保存接收到的消息     */
+}STRU_QUEUE_SEND;
+
+
+
+#define I2C_CR_MEN	0x80
+#define I2C_CR_MIEN	0x40
+#define I2C_CR_MSTA	0x20
+#define I2C_CR_MTX	0x10
+#define I2C_CR_TXAK	0x08
+#define I2C_CR_RSTA	0x04
+#define I2C_CR_BCST	0x01
+
+#define I2C_SR_MCF	0x80
+#define I2C_SR_MAAS	0x40
+#define I2C_SR_MBB	0x20
+#define I2C_SR_MAL	0x10
+#define I2C_SR_BCSTM	0x08
+#define I2C_SR_SRW	0x04
+#define I2C_SR_MIF	0x02
+#define I2C_SR_RXAK	0x01
+#define MPC_I2C_DR    0x10
+#define CONFIG_SYS_I2C_SPEED		100000
+
+
+
+/******************************** 头文件保护结尾 ******************************/
+#endif /* __BSP_HMI_H__ */
+/******************************** 头文件结束 **********************************/
+

@@ -1,0 +1,169 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tSocket", "tSocket\tSocket.vcproj", "{A4B4D42D-2105-4E71-8532-8971085C8884}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "testsend", "test\test.vcproj", "{1630482F-42F0-4DBA-B547-1AE4D957FED4}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "testreceive", "testreceive\testreceive.vcproj", "{53DA8155-F1EA-463A-8F0F-F37C5CF1694D}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "testserver", "..\testserver\testserver\testserver.vcproj", "{95101385-0DB3-4EEF-A350-9BDC0974BE2B}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "testclient", "..\testserver\testclient\testclient.vcproj", "{0B0E3E33-F740-4003-896E-1FFC836EBD96}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ping", "ping\ping.vcproj", "{FFF0B168-216C-4D4B-98FB-226A411C3955}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sniffer", "sniffer\sniffer.vcproj", "{48752551-BF02-4D0D-8F97-D96E67F01A0E}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tDiag", "tSocket\tDiag.vcproj", "{A4B4D42D-2105-4E71-8532-8971085C8884}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "p2pclient", "p2pclient\p2pclient.vcproj", "{FFF0B168-216C-4D4B-98FB-226A411C3955}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "p2pserver", "p2pserver\p2pserver.vcproj", "{FFF0B168-216C-4D4B-98FB-226A411C3955}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "p2pfileclient", "p2pfileclient\p2pfileclient.vcproj", "{FFF0B168-216C-4D4B-98FB-226A411C3955}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "p2pfileserver", "p2pfileserver\p2pfileserver.vcproj", "{FFF0B168-216C-4D4B-98FB-226A411C3955}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 13
+		SccProjectName0 = \u0022$/prj_mcwill_nat/PRJ_BTS/layer3\u0022,\u0020IIRNAAAA
+		SccLocalPath0 = ..\\..
+		SccProvider0 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		CanCheckoutShared = false
+		SccProjectFilePathRelativizedFromConnection0 = tSocket\\win32\\
+		SolutionUniqueID = {A1279F5F-6906-491D-8465-D5F14134A10A}
+		SccProjectUniqueName1 = tSocket\\tSocket.vcproj
+		SccLocalPath1 = ..\\..
+		CanCheckoutShared = false
+		SccProjectFilePathRelativizedFromConnection1 = tSocket\\win32\\tSocket\\
+		SccProjectUniqueName2 = test\\test.vcproj
+		SccProjectName2 = \u0022$/prj_mcwill_nat/PRJ_BTS/layer3/tSocket/win32/test\u0022,\u0020MBVOAAAA
+		SccLocalPath2 = test
+		CanCheckoutShared = false
+		SccProjectUniqueName3 = testreceive\\testreceive.vcproj
+		SccProjectName3 = \u0022$/prj_mcwill_nat/PRJ_BTS/layer3/tSocket/win32/testreceive\u0022,\u0020PBVOAAAA
+		SccLocalPath3 = testreceive
+		CanCheckoutShared = false
+		SccProjectUniqueName4 = ..\\testserver\\testserver\\testserver.vcproj
+		SccProjectName4 = \u0022$/prj_mcwill_nat/PRJ_BTS/layer3/tSocket/testserver/testserver\u0022,\u0020KEVOAAAA
+		SccLocalPath4 = ..\\testserver\\testserver
+		CanCheckoutShared = false
+		SccProjectUniqueName5 = ..\\testserver\\testclient\\testclient.vcproj
+		SccProjectName5 = \u0022$/prj_mcwill_nat/PRJ_BTS/layer3/tSocket/testserver/testclient\u0022,\u0020ZDVOAAAA
+		SccLocalPath5 = ..\\testserver\\testclient
+		CanCheckoutShared = false
+		SccProjectUniqueName6 = ping\\ping.vcproj
+		SccProjectName6 = \u0022$/prj_mcwill_nat/PRJ_BTS/layer3/tSocket/win32/ping\u0022,\u0020RFVOAAAA
+		SccLocalPath6 = ping
+		CanCheckoutShared = false
+		SccProjectUniqueName7 = sniffer\\sniffer.vcproj
+		SccProjectName7 = \u0022$/prj_mcwill_nat/PRJ_BTS/layer3/tSocket/win32/sniffer\u0022,\u0020SPVOAAAA
+		SccLocalPath7 = sniffer
+		CanCheckoutShared = false
+		SccProjectUniqueName8 = tSocket\\tDiag.vcproj
+		SccLocalPath8 = ..\\..
+		CanCheckoutShared = false
+		SccProjectFilePathRelativizedFromConnection8 = tSocket\\win32\\tSocket\\
+		SccProjectUniqueName9 = p2pclient\\p2pclient.vcproj
+		SccProjectName9 = \u0022$/prj_mcwill_nat/PRJ_BTS/layer3/tSocket/win32\u0022,\u0020XQUOAAAA
+		SccLocalPath9 = .
+		CanCheckoutShared = false
+		SccProjectFilePathRelativizedFromConnection9 = p2pclient\\
+		SccProjectUniqueName10 = p2pserver\\p2pserver.vcproj
+		SccProjectName10 = \u0022$/prj_mcwill_nat/PRJ_BTS/layer3/tSocket/win32\u0022,\u0020XQUOAAAA
+		SccLocalPath10 = .
+		CanCheckoutShared = false
+		SccProjectFilePathRelativizedFromConnection10 = p2pserver\\
+		SccProjectUniqueName11 = p2pfileserver\\p2pfileserver.vcproj
+		SccProjectName11 = \u0022$/prj_mcwill_nat/PRJ_BTS/layer3/tSocket/win32/p2pfileserver\u0022,\u0020VCEQAAAA
+		SccLocalPath11 = p2pfileserver
+		CanCheckoutShared = false
+		SccProjectUniqueName12 = p2pfileclient\\p2pfileclient.vcproj
+		SccProjectName12 = \u0022$/prj_mcwill_nat/PRJ_BTS/layer3/tSocket/win32\u0022,\u0020XQUOAAAA
+		SccLocalPath12 = .
+		CanCheckoutShared = false
+		SccProjectFilePathRelativizedFromConnection12 = p2pfileclient\\
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{A4B4D42D-2105-4E71-8532-8971085C8884}.Debug.ActiveCfg = Debug|Win32
+		{A4B4D42D-2105-4E71-8532-8971085C8884}.Debug.Build.0 = Debug|Win32
+		{A4B4D42D-2105-4E71-8532-8971085C8884}.Release.ActiveCfg = Release|Win32
+		{A4B4D42D-2105-4E71-8532-8971085C8884}.Release.Build.0 = Release|Win32
+		{1630482F-42F0-4DBA-B547-1AE4D957FED4}.Debug.ActiveCfg = Debug|Win32
+		{1630482F-42F0-4DBA-B547-1AE4D957FED4}.Debug.Build.0 = Debug|Win32
+		{1630482F-42F0-4DBA-B547-1AE4D957FED4}.Release.ActiveCfg = Release|Win32
+		{1630482F-42F0-4DBA-B547-1AE4D957FED4}.Release.Build.0 = Release|Win32
+		{53DA8155-F1EA-463A-8F0F-F37C5CF1694D}.Debug.ActiveCfg = Debug|Win32
+		{53DA8155-F1EA-463A-8F0F-F37C5CF1694D}.Debug.Build.0 = Debug|Win32
+		{53DA8155-F1EA-463A-8F0F-F37C5CF1694D}.Release.ActiveCfg = Release|Win32
+		{53DA8155-F1EA-463A-8F0F-F37C5CF1694D}.Release.Build.0 = Release|Win32
+		{95101385-0DB3-4EEF-A350-9BDC0974BE2B}.Debug.ActiveCfg = Debug|Win32
+		{95101385-0DB3-4EEF-A350-9BDC0974BE2B}.Debug.Build.0 = Debug|Win32
+		{95101385-0DB3-4EEF-A350-9BDC0974BE2B}.Release.ActiveCfg = Release|Win32
+		{95101385-0DB3-4EEF-A350-9BDC0974BE2B}.Release.Build.0 = Release|Win32
+		{0B0E3E33-F740-4003-896E-1FFC836EBD96}.Debug.ActiveCfg = Debug|Win32
+		{0B0E3E33-F740-4003-896E-1FFC836EBD96}.Debug.Build.0 = Debug|Win32
+		{0B0E3E33-F740-4003-896E-1FFC836EBD96}.Release.ActiveCfg = Release|Win32
+		{0B0E3E33-F740-4003-896E-1FFC836EBD96}.Release.Build.0 = Release|Win32
+		{FFF0B168-216C-4D4B-98FB-226A411C3955}.Debug.ActiveCfg = Debug|Win32
+		{FFF0B168-216C-4D4B-98FB-226A411C3955}.Debug.Build.0 = Debug|Win32
+		{FFF0B168-216C-4D4B-98FB-226A411C3955}.Release.ActiveCfg = Release|Win32
+		{FFF0B168-216C-4D4B-98FB-226A411C3955}.Release.Build.0 = Release|Win32
+		{48752551-BF02-4D0D-8F97-D96E67F01A0E}.Debug.ActiveCfg = Debug|Win32
+		{48752551-BF02-4D0D-8F97-D96E67F01A0E}.Debug.Build.0 = Debug|Win32
+		{48752551-BF02-4D0D-8F97-D96E67F01A0E}.Release.ActiveCfg = Release|Win32
+		{48752551-BF02-4D0D-8F97-D96E67F01A0E}.Release.Build.0 = Release|Win32
+		{A4B4D42D-2105-4E71-8532-8971085C8884}.Debug.ActiveCfg = Debug|Win32
+		{A4B4D42D-2105-4E71-8532-8971085C8884}.Debug.Build.0 = Debug|Win32
+		{A4B4D42D-2105-4E71-8532-8971085C8884}.Release.ActiveCfg = Release|Win32
+		{A4B4D42D-2105-4E71-8532-8971085C8884}.Release.Build.0 = Release|Win32
+		{FFF0B168-216C-4D4B-98FB-226A411C3955}.Debug.ActiveCfg = Debug|Win32
+		{FFF0B168-216C-4D4B-98FB-226A411C3955}.Debug.Build.0 = Debug|Win32
+		{FFF0B168-216C-4D4B-98FB-226A411C3955}.Release.ActiveCfg = Release|Win32
+		{FFF0B168-216C-4D4B-98FB-226A411C3955}.Release.Build.0 = Release|Win32
+		{FFF0B168-216C-4D4B-98FB-226A411C3955}.Debug.ActiveCfg = Debug|Win32
+		{FFF0B168-216C-4D4B-98FB-226A411C3955}.Debug.Build.0 = Debug|Win32
+		{FFF0B168-216C-4D4B-98FB-226A411C3955}.Release.ActiveCfg = Release|Win32
+		{FFF0B168-216C-4D4B-98FB-226A411C3955}.Release.Build.0 = Release|Win32
+		{FFF0B168-216C-4D4B-98FB-226A411C3955}.Debug.ActiveCfg = Debug|Win32
+		{FFF0B168-216C-4D4B-98FB-226A411C3955}.Debug.Build.0 = Debug|Win32
+		{FFF0B168-216C-4D4B-98FB-226A411C3955}.Release.ActiveCfg = Release|Win32
+		{FFF0B168-216C-4D4B-98FB-226A411C3955}.Release.Build.0 = Release|Win32
+		{FFF0B168-216C-4D4B-98FB-226A411C3955}.Debug.ActiveCfg = Debug|Win32
+		{FFF0B168-216C-4D4B-98FB-226A411C3955}.Debug.Build.0 = Debug|Win32
+		{FFF0B168-216C-4D4B-98FB-226A411C3955}.Release.ActiveCfg = Release|Win32
+		{FFF0B168-216C-4D4B-98FB-226A411C3955}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

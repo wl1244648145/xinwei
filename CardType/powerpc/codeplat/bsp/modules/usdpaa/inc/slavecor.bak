@@ -1,0 +1,84 @@
+
+
+#ifndef BSP_SLAVECORECFG_H
+#define BSP_SLAVECORECFG_H
+
+
+/* 配置表与中断向量号对应关系 */
+typedef struct  tagT_IntEventRecord
+{
+    unsigned long     ulIntEventNo;               /* 中断事件号 */
+    unsigned long     ulIntVector;                /* 中断向量号 */
+	unsigned long     ulSrcCoreMask;              /* 中断源Core掩码 */
+	unsigned long     ulDstCoreMask;              /* 中断目的Core掩码 */
+	unsigned long     ulIntType;                   /* 中断类型 1:外部中断 2:IPI中断 3:MSG中断*/ 
+	unsigned long     ulReserved;                  /* 保留 */
+
+}T_IntEventRecord;
+
+
+typedef struct tagTSlaveCoreCfg
+{
+	/* 该从核黑匣子的起始地址与大小, */
+	unsigned long dwBbxPhyBase;
+	unsigned long dwBbxVirtBase;
+	unsigned long dwBbxSize;
+	
+
+	/* 网口接收内存起始地址与大小 */
+	unsigned long dwEmacPhyBase;
+	unsigned long dwEmacVirtBase;
+	unsigned long dwEmacSize;
+	
+	/* 共享设备树始地址与大小 */
+	unsigned long dwFdtPhyBase;
+	unsigned long dwFdtVirtBase;
+	unsigned long dwFdtSize;
+	
+	/* 从核GDB通道内存起始地址与大小 */
+	unsigned long dwGdbPhyBase;
+	unsigned long dwGdbVirtBase;
+	unsigned long dwGdbSize;
+	
+	
+  /* 从核shell/打印通道内存起始地址与大小 */
+	unsigned long dwShellPhyBase;
+	unsigned long dwShellVirtBase;
+	unsigned long dwShellSize;
+
+	
+	/* 核间通信通道内存起始地址与大小 */
+	unsigned long dwIpcPhyBase;
+	unsigned long dwIpcVirtBase;
+	unsigned long dwIpcSize;
+
+
+	/* 应用层共享内存配置管理结构起始地址(包括共享内存块，核间队列，软件UB池集，BMAN池集等的管理结构) */
+	unsigned long dwShmManPhyBase;
+	unsigned long dwShmManVirtBase;
+	unsigned long dwShmManSize;
+	
+	unsigned long dwSfnAddr;
+	
+	
+	unsigned char aucIpAddr[4];
+	unsigned char aucMacAddr[6];
+	
+	/* 中断事件配置表 */ /* caiky add 2011-7-23 */
+	T_IntEventRecord tIntEventReCord[256];
+	
+	
+	/* 共享内存虚拟地址与物理地址的偏移 */
+	unsigned long dwPageOffset;
+	
+}TSlaveCoreCfg;
+extern TSlaveCoreCfg *g_ptSlaveCoreCfg;
+inline static int  BspSetCfg(void *p)
+{
+	g_ptSlaveCoreCfg = (TSlaveCoreCfg *)p;
+	return 0;
+}
+
+
+#endif /* BSP_SLAVECORECFG_H */
+

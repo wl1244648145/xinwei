@@ -1,0 +1,862 @@
+Document file - DO NOT EDIT
+
+<BEGIN> BUILD_L3_lib_BUILDRULE
+archive
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_AR
+arppc
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_ARCHIVE
+$(PRJ_DIR)/L3_lib/ApFrmWk.a
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_AS
+ccppc
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_CC
+ccppc
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_CC_ARCH_SPEC
+-mcpu=604 -mstrict-align
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_CFLAGS
+-O3 \
+	-ansi \
+	-fno-builtin \
+	-fno-defer-pop \
+	-I$(WIND_BASE)/target/h/ \
+	-I$(PRJ_DIR)/../../../../../prj_common/APFramework/H \
+	-I$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC \
+	-I$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3 \
+	-I$(PRJ_DIR)/../../../../../prj_common/include \
+	-DCPU=SIMNT \
+	-DTOOL_FAMILY=gnu \
+	-DTOOL=gnu \
+	-fpack-struct \
+	-DM_TGT_L3 \
+	-DNDEBUG \
+	-fsigned-char \
+	-DPRJ_BUILD \
+	-DVLANBROADFILT_EN
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_CFLAGS_AS
+-g \
+	-mcpu=604 \
+	-mstrict-align \
+	-ansi \
+	-fno-builtin \
+	-P \
+	-xassembler-with-cpp \
+	-I. \
+	-I$(WIND_BASE)/target/h/ \
+	-DCPU=PPC604 \
+	-DTOOL_FAMILY=gnu \
+	-DTOOL=gnu
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_CPP
+ccppc -E -P
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_HEX_FLAGS
+
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_LD
+ldppc
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_LDDEPS
+
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_LDFLAGS
+-X -N
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_LD_PARTIAL
+ccppc -r -nostdlib -Wl,-X
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_LD_PARTIAL_FLAGS
+-X -r
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_NM
+nmppc
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_OPTION_DEFINE_MACRO
+-D
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_OPTION_DEPEND
+-M -w
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_OPTION_GENERATE_DEPENDENCY_FILE
+-MD
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_OPTION_INCLUDE_DIR
+-I
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_OPTION_LANG_C
+-xc
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_OPTION_UNDEFINE_MACRO
+-U
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_POST_BUILD_RULE
+
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_PRJ_LIBS
+
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_SIZE
+sizeppc
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_TOOL_FAMILY
+gnu
+<END>
+
+<BEGIN> BUILD_L3_lib_RO_DEPEND_PATH
+{$(WIND_BASE)/target/h/} \
+	{$(WIND_BASE)/target/src/} \
+	{$(WIND_BASE)/target/config/}
+<END>
+
+<BEGIN> BUILD_L3_lib_TC
+::tc_PPC604gnu
+<END>
+
+<BEGIN> BUILD_RULE_ApFrmWk.out
+
+<END>
+
+<BEGIN> BUILD_RULE_ApFrmWk.pl
+
+<END>
+
+<BEGIN> BUILD_RULE_archive
+
+<END>
+
+<BEGIN> BUILD_RULE_objects
+
+<END>
+
+<BEGIN> BUILD__CURRENT
+L3_lib
+<END>
+
+<BEGIN> BUILD__LIST
+L3_lib
+<END>
+
+<BEGIN> CORE_INFO_TYPE
+::prj_vxApp
+<END>
+
+<BEGIN> CORE_INFO_VERSION
+2.2
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/AfwInit.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/AfwInit.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/AfwInit.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/AfwMain.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComEntity.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/PtrList.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/dataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/TimerTask.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Task.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Transaction.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/AfwInit.cpp_objects
+AfwInit.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/AfwInit.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/AfwMain.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/AfwMain.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/dataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/AfwMain.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/AfwMain.cpp_objects
+AfwMain.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/AfwMain.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/BizTask.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/BizTask.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BizTask.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Task.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComEntity.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/PtrList.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/dataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/MsgQueue.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Transaction.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/TransactionManager.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/map \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_tree.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_algobase.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_config.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/powerpc-wrs-vxworks/include/_G_config.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_relops.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_pair.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/type_traits.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/new.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/new \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/exception \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/iostream.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/streambuf.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/libio.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stdio-lock.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_iterator.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_alloc.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_construct.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_function.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_map.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_multimap.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/TimeOutNotify.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Message.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/BizTask.cpp_objects
+BizTask.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/BizTask.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/ComEntity.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/ComEntity.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComEntity.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/PtrList.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/dataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ApAssert.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/FrameworkErrorCode.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/LogArea.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/L3L2MessageId.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/ComEntity.cpp_objects
+ComEntity.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/ComEntity.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/ComMessage.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/ComMessage.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComEntity.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/PtrList.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/dataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/FrameworkErrorCode.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/LogArea.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ApAssert.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/typeinfo \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/exception
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/ComMessage.cpp_objects
+ComMessage.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/ComMessage.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/DebugLevel.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/DebugLevel.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_common/APFramework/H/DebugLevel.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/LogArea.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/dataType.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/DebugLevel.cpp_objects
+DebugLevel.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/DebugLevel.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/Log.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/Log.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/dataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/BtsLog.cpp \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/iomanip.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/iostream.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/streambuf.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/libio.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/powerpc-wrs-vxworks/include/_G_config.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stdio-lock.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/logArea.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/DebugLevel.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/LogArea.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/Log.cpp_objects
+Log.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/Log.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/MemOpReload.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/MemOpReload.cpp_dependencies
+$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/MemOpReload.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/MemOpReload.cpp_objects
+MemOpReload.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/MemOpReload.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/Message.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/Message.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Message.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComEntity.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/PtrList.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/dataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/Message.cpp_objects
+Message.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/Message.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/MsgQueue.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/MsgQueue.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_common/APFramework/H/MsgQueue.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/dataType.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/typeinfo \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/exception
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/MsgQueue.cpp_objects
+MsgQueue.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/MsgQueue.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/Mutex.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/Mutex.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/dataType.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/Mutex.cpp_objects
+Mutex.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/Mutex.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/Object.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/Object.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/dataType.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/Object.cpp_objects
+Object.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/Object.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/PtrList.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/PtrList.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_common/APFramework/H/PtrList.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/dataType.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/PtrList.cpp_objects
+PtrList.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/PtrList.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/Task.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/Task.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Task.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComEntity.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/PtrList.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/dataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Message.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/Task.cpp_objects
+Task.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/Task.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/TimeOutNotify.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/TimeOutNotify.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_common/APFramework/H/TimeOutNotify.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Message.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComEntity.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/PtrList.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/dataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/TimeOutNotify.cpp_objects
+TimeOutNotify.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/TimeOutNotify.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/Timer.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/Timer.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Timer.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Message.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComEntity.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/PtrList.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/dataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/TimerTask.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Task.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/mutex.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/Timer.cpp_objects
+Timer.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/Timer.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/TimerTask.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/TimerTask.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/TimerTask.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Task.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComEntity.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/PtrList.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/dataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Timer.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Message.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/TimerTask.cpp_objects
+TimerTask.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/TimerTask.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/Transaction.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/Transaction.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Transaction.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComEntity.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/PtrList.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/dataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Timer.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Message.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/TransactionManager.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/map \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_tree.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_algobase.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_config.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/powerpc-wrs-vxworks/include/_G_config.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_relops.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_pair.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/type_traits.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/new.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/new \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/exception \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/iostream.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/streambuf.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/libio.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stdio-lock.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_iterator.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_alloc.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_construct.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_function.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_map.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_multimap.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/TimeOutNotify.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/typeinfo
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/Transaction.cpp_objects
+Transaction.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/Transaction.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/TransactionManager.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/TransactionManager.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_common/APFramework/H/TransactionManager.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/map \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_tree.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_algobase.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_config.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/powerpc-wrs-vxworks/include/_G_config.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_relops.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_pair.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/type_traits.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/new.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/new \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/exception \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/iostream.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/streambuf.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/libio.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stdio-lock.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_iterator.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_alloc.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_construct.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_function.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_map.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_multimap.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Transaction.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComEntity.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/PtrList.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/dataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/typeinfo
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/TransactionManager.cpp_objects
+TransactionManager.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/TransactionManager.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/fsm.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/fsm.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_common/APFramework/H/fsm.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/fsm.cpp_objects
+fsm.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/fsm.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> PROJECT_FILES
+$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/TransactionManager.cpp \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/AfwMain.cpp \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/BizTask.cpp \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/ComEntity.cpp \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/ComMessage.cpp \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/DebugLevel.cpp \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/fsm.cpp \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/Log.cpp \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/Message.cpp \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/MsgQueue.cpp \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/Mutex.cpp \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/Object.cpp \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/Task.cpp \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/TimeOutNotify.cpp \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/Timer.cpp \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/TimerTask.cpp \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/Transaction.cpp \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/AfwInit.cpp \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/PtrList.cpp \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/MemOpReload.cpp
+<END>
+
+<BEGIN> userComments
+framework
+<END>
+

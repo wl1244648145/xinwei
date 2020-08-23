@@ -1,0 +1,137 @@
+#ifndef _INC_TASKDEF
+#define _INC_TASKDEF
+
+typedef enum {
+    //L3
+    M_TID_CM = 0,     // 0  Configuration Management
+    M_TID_FM,         // 1  Fault Management
+    M_TID_PM,         // 2  Performance Management
+    M_TID_UM,         // 3  Ut Management
+    M_TID_SM,         // 4  Software upgrade & transfer Management
+    M_TID_DIAGM,      // 5  DIAGnostic Management
+    M_TID_BM,         // 6  Booting Management
+    M_TID_GM,         // 7  Gps Management
+    M_TID_SYS,        // 8  SYStem status management & alarm detection
+    M_TID_FTPCLIENT,  // 9  FtpClient, do both file upload & download
+    M_TID_EMSAGENTTX, // 10 udp client on bts which send datagram to ems
+    M_TID_L2IF,      // 11 interface task on L3 which send packets to L2
+    M_TID_LOG,        // 12 LOGger
+    //L3 Data Service tasks
+    M_TID_EB,         // 13 Ether Bridge
+    M_TID_SNOOP,      // 14 Snoop
+    M_TID_TUNNEL,     // 15 Tunnel
+    M_TID_ARP,        // 16 ARP
+    M_TID_CLEANUP,    // 17 Clean Up
+    M_TID_DM,         // 18 DM
+    M_TID_TCR,        // 19 TCR
+    M_TID_TDR,        // 20 TDR
+    //L3 Voice Service tasks
+    M_TID_VOICE,      // 21
+	M_TID_VCR,        // 22
+	M_TID_VDR,        // 23
+
+    //tasks send message only listed as bellow
+    M_TID_EMSAGENTRX, // 24 udp server on bts which recv datagram from ems
+    M_TID_UTAGENT,  // 25
+	M_TID_L3OAMDIAGEMSL3L2,     // beamforming redirection related tasks
+	M_TID_L3OAMDIAGL2L3EMS,     // beamforming redirection related tasks
+    M_TID_L2SHELL,     //  task of L2 shell rediction on L3 PPC
+#ifdef WBBU_CODE
+    M_TID_WRRU,
+    M_TID_WBBU,// add for wrru
+#endif
+    M_TID_VCR1,	//20090624 btsL3_with_2SAG fengbing 
+    M_TID_VDR1,	//20090624 btsL3_with_2SAG fengbing 
+    M_TID_SAG,	//20091101 add by fengbing
+    M_TID_DGRV_LINK,//20091101 add by fengbing
+
+    //L2
+    M_TID_DAC = 50,   // 50
+    M_TID_VAC,        // 51
+    M_TID_DIAG,       // 52
+    M_TID_L2OAM,      // 53
+    M_TID_L1TDDIF,    //54
+    M_TID_AUXCTRLIF,  //55
+    M_TID_L2BOOT,     //56
+    M_TID_L2MAIN,     //57
+    M_TID_L3IF,       //58
+    M_TID_PCISIO,      //59   , serial IO over PCI task on L2
+
+	#ifdef M_TGT_WANIF
+	M_TID_WANIF,
+	#endif
+
+    //CPE
+    M_TID_CPEPCIF= 100,     // 100
+    M_TID_CPECM,      // 101
+    M_TID_CPESM,      // 102
+    M_TID_CPEDIAG,    // 103
+    M_TID_CPEL1L2IF,  // 104 L1&L2 interface
+    M_TID_ETHIF,      // 105
+    M_TID_USBIF,      // 106
+	M_TID_UTV,	      // 107 CPE voice task
+    M_TID_UTDM,       // 108 CPE DM task
+    M_TID_BTSAGENT,   // 109 CPE BTS AGENT, proxy for BTS 
+	M_TID_CPEPM,	  // 110 CPE Performance Task
+    //Common Definitions
+    M_TID_TT,         // 111 Timer Task
+
+#ifdef BY_PASS_AIR_TEST
+    M_TID_UTVAC, 
+    M_TID_UTL2,
+    M_TID_BTSBRIDGE,
+    M_TID_UTBRIDGE,
+#endif
+
+#ifdef L1_PROXY_TEST
+    M_TID_L1PROXY,
+#endif
+
+#ifdef COMIP
+    M_TID_MMI,
+    M_TID_TEST,
+#else
+    M_TID_RSV1,
+    M_TID_RSV2,
+#endif
+ 	M_TID_L2_TXINL3,
+    M_TID_RSV3,
+    M_TID_RSV4,
+    M_TID_RSV5,
+
+#if !defined COMIP && (defined M_CLUSTER_EN || defined CPE_WITH_MMI)
+    M_TID_MMI,
+#endif
+
+#ifdef CPE_RPT
+	M_TID_RPT,
+#endif
+    M_TID_MAX
+}TID;
+
+#include "taskPriority.h"
+#ifdef MEM113
+#define M_TID_ROUTER          M_TID_ETHIF
+#define M_TID_UART          M_TID_RSV3
+#define M_TID_ATDCE	 M_TID_RSV1
+#define M_TID_USBDEVICE	M_TID_RSV2		
+#define M_TID_USBHOST		M_TID_RSV4
+#define M_TID_LWIP			M_TID_RSV5
+#endif
+
+#ifdef E68_ARM
+#define M_TID_ATDCE	  M_TID_RSV1
+#define M_TID_LWIP           M_TID_RSV2
+#define M_TID_UART1           M_TID_RSV3
+#define M_TID_USBDEVICE	M_TID_RSV5	 	
+#define M_TID_BLUETOOTH   M_TID_RSV4
+#define M_TID_ROOT            M_TID_ETHIF
+#endif
+
+#ifdef PRJ_CPE438L
+#define M_TID_USBDEVICE	M_TID_RSV1	 	
+#define M_TID_USBHOST   M_TID_RSV2
+#define M_TID_LWIP           M_TID_RSV3
+#define M_TID_ROOT            M_TID_ETHIF
+#endif
+#endif

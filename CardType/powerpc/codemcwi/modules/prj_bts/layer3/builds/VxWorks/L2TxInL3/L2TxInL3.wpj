@@ -1,0 +1,1918 @@
+Document file - DO NOT EDIT
+
+<BEGIN> BUILD_L2Lib_BUILDRULE
+archive
+<END>
+
+<BEGIN> BUILD_L2Lib_MACRO_AR
+arppc
+<END>
+
+<BEGIN> BUILD_L2Lib_MACRO_ARCHIVE
+$(PRJ_DIR)/L2Lib/L2.a
+<END>
+
+<BEGIN> BUILD_L2Lib_MACRO_AS
+ccppc
+<END>
+
+<BEGIN> BUILD_L2Lib_MACRO_CC
+ccppc
+<END>
+
+<BEGIN> BUILD_L2Lib_MACRO_CC_ARCH_SPEC
+-mcpu=604 -mstrict-align
+<END>
+
+<BEGIN> BUILD_L2Lib_MACRO_CFLAGS
+-g \
+	-mcpu=604 \
+	-mstrict-align \
+	-fno-builtin \
+	-fsigned-char \
+	-I$(WIND_BASE)/target/h/ \
+	-I$(PRJ_DIR)/../../../../../prj_common/framework/h \
+	-I$(PRJ_DIR)/../../../../../prj_common/APFramework/H \
+	-I$(PRJ_DIR)/../../../../../prj_common/APFramework/src \
+	-I$(PRJ_DIR)/../../../../../prj_common/layer2/h \
+	-I$(PRJ_DIR)/../../../../../prj_bts/layer2/L1If \
+	-I$(PRJ_DIR)/../../../../../prj_bts/bts_bsp/src \
+	-I$(PRJ_DIR)/../../../../../prj_bts/bts_bsp/McWill_L2 \
+	-I$(PRJ_DIR)/../../../../../prj_bts/layer2 \
+	-I$(PRJ_DIR)/../../../../../prj_cpe/arm/layer2 \
+	-I$(PRJ_DIR)/../../../../../prj_cpe/arm/common/h \
+	-I$(PRJ_DIR)/../../../../../prj_bts/common/h \
+	-I$(PRJ_DIR)/../../../../../prj_sim/Layer2 \
+	-I$(PRJ_DIR)/../../../../../prj_bts/common/src \
+	-I$(PRJ_DIR)/../../../../../prj_bts/layer2/common \
+	-I$(PRJ_DIR)/../../../../../prj_bts/layer2 \
+	-I$(PRJ_DIR)/../../../../../prj_sim/Layer2/l2sim_with_l3 \
+	-I$(PRJ_DIR)/../../../../../prj_common \
+	-I$(PRJ_DIR)/../../../../../prj_common/include \
+	\
+ 	-I$(PRJ_DIR)/../../../../../prj_bts/common/PciIf \
+	-I$(PRJ_DIR)/../../../../../prj_bts/bts_bsp/src \
+	-I$(WIND_BASE)/target/config/McWill_L2 \
+	-I$(WIND_BASE)/target/h/drv/timer \
+	-I$(PRJ_DIR)/../L2_bsp \
+	-I$(PRJ_DIR)/../../../../../prj_common \
+	-I$(PRJ_DIR)/../../../../../prj_common/APFramework/H \
+	-I$(PRJ_DIR)/../../../../../prj_bts/common/PciIf \
+	-I$(PRJ_DIR)/../../../../../prj_bts/common/h \
+	-I$(WIND_BASE)/target/config/McWill_L2 \
+	-I$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC \
+	-I$(PRJ_DIR)/../../../../../prj_bts/bts_bsp/src \
+	-I$(WIND_BASE)/target/h/drv/timer \
+	-I$(PRJ_DIR)/../L2_bsp \
+	-I$(PRJ_DIR)/../../../../../prj_bts/layer3/BootTask \
+	-I$(PRJ_DIR)/../../../../../PRJ_BTS/common/CSI \
+	-DCPU=PPC604 \
+	-DTOOL_FAMILY=gnu \
+	-DTOOL=gnu \
+	-DVXWORKS \
+	-DNDEBUG \
+	-DM_TGT_L2 \
+	-DPRJ_BUILD \
+	-DBTS_SIDE \
+	-DMEM_LEAK_DEBUG \
+	-DINTE_WITH_L3 \
+	-DL2_TX
+<END>
+
+<BEGIN> BUILD_L2Lib_MACRO_CFLAGS_AS
+-O3 \
+	-mcpu=604 \
+	-mstrict-align \
+	-ansi \
+	-fno-builtin \
+	-P \
+	-xassembler-with-cpp \
+	-I. \
+	-I$(WIND_BASE)/target/h/ \
+	-DCPU=PPC604 \
+	-DTOOL_FAMILY=gnu \
+	-DTOOL=gnu
+<END>
+
+<BEGIN> BUILD_L2Lib_MACRO_CPP
+ccppc -E -P
+<END>
+
+<BEGIN> BUILD_L2Lib_MACRO_HEX_FLAGS
+
+<END>
+
+<BEGIN> BUILD_L2Lib_MACRO_LD
+ldppc
+<END>
+
+<BEGIN> BUILD_L2Lib_MACRO_LDDEPS
+
+<END>
+
+<BEGIN> BUILD_L2Lib_MACRO_LDFLAGS
+-X -N
+<END>
+
+<BEGIN> BUILD_L2Lib_MACRO_LD_PARTIAL
+ccppc -r -nostdlib -Wl,-X
+<END>
+
+<BEGIN> BUILD_L2Lib_MACRO_LD_PARTIAL_FLAGS
+-X -r
+<END>
+
+<BEGIN> BUILD_L2Lib_MACRO_NM
+nmppc
+<END>
+
+<BEGIN> BUILD_L2Lib_MACRO_OPTION_DEFINE_MACRO
+-D
+<END>
+
+<BEGIN> BUILD_L2Lib_MACRO_OPTION_DEPEND
+-M -w
+<END>
+
+<BEGIN> BUILD_L2Lib_MACRO_OPTION_GENERATE_DEPENDENCY_FILE
+-MD
+<END>
+
+<BEGIN> BUILD_L2Lib_MACRO_OPTION_INCLUDE_DIR
+-I
+<END>
+
+<BEGIN> BUILD_L2Lib_MACRO_OPTION_LANG_C
+-xc
+<END>
+
+<BEGIN> BUILD_L2Lib_MACRO_OPTION_UNDEFINE_MACRO
+-U
+<END>
+
+<BEGIN> BUILD_L2Lib_MACRO_POST_BUILD_RULE
+
+<END>
+
+<BEGIN> BUILD_L2Lib_MACRO_PRJ_LIBS
+$(PRJ_DIR)/../ApFrmWk/L2Lib/ApFrmWk.a
+<END>
+
+<BEGIN> BUILD_L2Lib_MACRO_SIZE
+sizeppc
+<END>
+
+<BEGIN> BUILD_L2Lib_MACRO_TOOL_FAMILY
+gnu
+<END>
+
+<BEGIN> BUILD_L2Lib_RO_DEPEND_PATH
+{$(WIND_BASE)/target/h/} \
+	{$(WIND_BASE)/target/src/} \
+	{$(WIND_BASE)/target/config/}
+<END>
+
+<BEGIN> BUILD_L2Lib_TC
+::tc_PPC604gnu
+<END>
+
+<BEGIN> BUILD_RULE_L2.out
+
+<END>
+
+<BEGIN> BUILD_RULE_L2.pl
+
+<END>
+
+<BEGIN> BUILD_RULE_L2Main.out
+
+<END>
+
+<BEGIN> BUILD_RULE_L2Main.pl
+
+<END>
+
+<BEGIN> BUILD_RULE_L2TxInL3.out
+
+<END>
+
+<BEGIN> BUILD_RULE_L2TxInL3.pl
+
+<END>
+
+<BEGIN> BUILD_RULE_archive
+
+<END>
+
+<BEGIN> BUILD_RULE_l2sim_with_l3_vx604.out
+
+<END>
+
+<BEGIN> BUILD_RULE_l2sim_with_l3_vx604.pl
+
+<END>
+
+<BEGIN> BUILD_RULE_objects
+
+<END>
+
+<BEGIN> BUILD__CURRENT
+L2Lib
+<END>
+
+<BEGIN> BUILD__LIST
+L2Lib
+<END>
+
+<BEGIN> CORE_INFO_TYPE
+::prj_vxApp
+<END>
+
+<BEGIN> CORE_INFO_VERSION
+2.2
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/BtsL2OamIfTx.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/BtsL2OamIfTx.cpp_dependencies
+$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/layer2.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/DataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/DefaultConfig.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/btsCommon.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/os.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/btsTypes.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/BtsConfig.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Mac.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/aplib.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/aplib++.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L1L2_If.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/l2msg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/RsCrc.h \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/BtsMacSessionTx.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/MacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/PerfMac.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Perf.h \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/Bts_L1L2_If.h \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/Bts_L2L3_If.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2L3_If.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2Msg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/SharedCH.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2DiagLog.h \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/Sim_RrmScgTs.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Layer2.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/InterL2TxRxMsg.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/Sim_RrmScgTs.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/Bts_L1L2_If.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/Bts_L2L3_If.h \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/BtsUserSessionTx.h \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/BtsDacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/DacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Dac.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/frk_os.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/DacFsm.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/frk.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/DacMsg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/MacMsg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/PerfDac.h \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/BtsVacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/VacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Vac.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/LogArea.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/UserSession.h \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/BtsMacSessionTX.h \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/BtsLayer2Tx.h \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/BtsLayer2Base.h \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/BtsMacMsg.h \
+	$(PRJ_DIR)/../../../../../prj_bts/common/h/L2L3MsgDef.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/l2_common.h \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/common/CSI/sysL2BspCsi.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/BtsL2OamIfTx.cpp_objects
+BtsL2OamIfTx.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/BtsL2OamIfTx.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/BtsLayer2Base.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/BtsLayer2Base.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_common/layer2/h/layer2.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/DataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/DefaultConfig.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/btsCommon.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/os.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/btsTypes.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/BtsConfig.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Mac.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/aplib.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/aplib++.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L1L2_If.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/l2msg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/RsCrc.h \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/Bts_L2L3_If.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2L3_If.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2Msg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/LogArea.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/frk.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/frk_os.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/SharedCH.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/l2_common.h \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/BtsLayer2Base.h \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/Bts_L1L2_If.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/MacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/PerfMac.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Perf.h \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/BtsMacMsg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/MacMsg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/InterL2TxRxMsg.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/Sim_RrmScgTs.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Layer2.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/Bts_L1L2_If.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/Bts_L2L3_If.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/BtsLayer2Base.cpp_objects
+BtsLayer2Base.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/BtsLayer2Base.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/BtsLayer2Tx.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/BtsLayer2Tx.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_common/layer2/h/layer2.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/DataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/DefaultConfig.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/btsCommon.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/os.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/btsTypes.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/BtsConfig.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Mac.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/aplib.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/aplib++.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L1L2_If.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/l2msg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/RsCrc.h \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/BtsMacSessionTx.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/MacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/PerfMac.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Perf.h \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/Bts_L1L2_If.h \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/Bts_L2L3_If.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2L3_If.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2Msg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/SharedCH.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2DiagLog.h \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/Sim_RrmScgTs.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Layer2.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/InterL2TxRxMsg.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/Sim_RrmScgTs.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/Bts_L1L2_If.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/Bts_L2L3_If.h \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/BtsUserSessionTx.h \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/BtsDacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/DacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Dac.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/frk_os.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/DacFsm.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/frk.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/DacMsg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/MacMsg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/PerfDac.h \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/BtsVacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/VacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Vac.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/LogArea.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/UserSession.h \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/BtsMacSessionTX.h \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/BtsDacFsm.h \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/BtsLayer2Tx.h \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/BtsLayer2Base.h \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/BtsMacMsg.h \
+	$(PRJ_DIR)/../../../../../prj_bts/common/h/L2L3MsgDef.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/l2_common.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/ExecTimeCounter.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/StatCounter.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/BtsLayer2Tx.cpp_objects
+BtsLayer2Tx.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/BtsLayer2Tx.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/BtsMacSessionTx.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/BtsMacSessionTx.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_common/layer2/h/btsCommon.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/os.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/btsTypes.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/BtsConfig.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/layer2.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/DataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/DefaultConfig.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/RsCrc.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Mac.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/aplib.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/aplib++.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L1L2_If.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/l2msg.h \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/BtsLayer2Tx.h \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/BtsMacSessionTx.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/MacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/PerfMac.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Perf.h \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/Bts_L1L2_If.h \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/Bts_L2L3_If.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2L3_If.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2Msg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/SharedCH.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2DiagLog.h \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/Sim_RrmScgTs.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Layer2.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/InterL2TxRxMsg.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/Sim_RrmScgTs.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/Bts_L1L2_If.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/Bts_L2L3_If.h \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/BtsUserSessionTx.h \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/BtsDacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/DacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Dac.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/frk_os.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/DacFsm.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/frk.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/DacMsg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/MacMsg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/PerfDac.h \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/BtsVacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/VacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Vac.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/LogArea.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/UserSession.h \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/BtsMacSessionTX.h \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/BtsLayer2Base.h \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/BtsMacMsg.h \
+	$(PRJ_DIR)/../../../../../prj_bts/common/h/L2L3MsgDef.h \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/BtsDacFsm.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/ExecTimeCounter.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/StatCounter.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/l2_common.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/BtsMacSessionTx.cpp_objects
+BtsMacSessionTx.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/BtsMacSessionTx.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/Bts_L2Tx.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/Bts_L2Tx.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_common/framework/h/os.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/aplib.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/aplib++.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/frk.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/frk_os.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/frk++.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/l2_port.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/btsCommon.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/btsTypes.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/BtsConfig.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/layer2.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/DataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/DefaultConfig.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/l2msg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/l2_common.h \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/Bts_L2.h \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/Bts_L2L3_If.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2L3_If.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2Msg.h \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/Bts_L1L2_If.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L1L2_If.h \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/BtsLayer2Tx.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Mac.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/RsCrc.h \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/BtsMacSessionTx.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/MacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/PerfMac.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Perf.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/SharedCH.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2DiagLog.h \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/Sim_RrmScgTs.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Layer2.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/InterL2TxRxMsg.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/Sim_RrmScgTs.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/Bts_L1L2_If.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/Bts_L2L3_If.h \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/BtsUserSessionTx.h \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/BtsDacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/DacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Dac.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/DacFsm.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/DacMsg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/MacMsg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/PerfDac.h \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/BtsVacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/VacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Vac.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/LogArea.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/UserSession.h \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/BtsMacSessionTX.h \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/BtsLayer2Base.h \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/BtsMacMsg.h \
+	$(PRJ_DIR)/../../../../../prj_bts/common/h/L2L3MsgDef.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/mac.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/ExecTimeCounter.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/StatCounter.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/Bts_L2Tx.cpp_objects
+Bts_L2Tx.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/Bts_L2Tx.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/L2EntityBtsInL3.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/L2EntityBtsInL3.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_common/framework/h/os.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/aplib.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/aplib++.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/frk.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/frk_os.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/frk++.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/l2_port.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/l2_common.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/btsCommon.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/btsTypes.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/BtsConfig.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/l2msg.h \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/Bts_L2_If.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L1L2_If.h \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/Bts_L1L2_If.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/layer2.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/DataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/DefaultConfig.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/Bts_L2L3_If.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2L3_If.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2Msg.h \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/BtsLayer2Tx.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Mac.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/RsCrc.h \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/BtsMacSessionTx.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/MacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/PerfMac.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Perf.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/SharedCH.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2DiagLog.h \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/Sim_RrmScgTs.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Layer2.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/InterL2TxRxMsg.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/Sim_RrmScgTs.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/Bts_L1L2_If.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/Bts_L2L3_If.h \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/BtsUserSessionTx.h \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/BtsDacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/DacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Dac.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/DacFsm.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/DacMsg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/MacMsg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/PerfDac.h \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/BtsVacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/VacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Vac.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/LogArea.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/UserSession.h \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/BtsMacSessionTX.h \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/BtsLayer2Base.h \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/BtsMacMsg.h \
+	$(PRJ_DIR)/../../../../../prj_bts/common/h/L2L3MsgDef.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2Entity.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComEntity.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/PtrList.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/ExecTimeCounter.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/StatCounter.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/L2EntityBtsInL3.cpp_objects
+L2EntityBtsInL3.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/L2EntityBtsInL3.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/Sim_RrmScgTs.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/Sim_RrmScgTs.cpp_dependencies
+$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/Sim_RrmScgTs.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Layer2.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/DataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/DefaultConfig.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/Sim_RrmScgTs.cpp_objects
+Sim_RrmScgTs.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/Sim_RrmScgTs.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/bts_L2_port.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/bts_L2_port.c_dependencies
+$(PRJ_DIR)/../../../../../prj_common/framework/h/os.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/aplib.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/frk.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/frk_os.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/l2msg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Layer2.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/DataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/DefaultConfig.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/btsCommon.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/btsTypes.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/BtsConfig.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/bts_L2_port.c_objects
+bts_L2_port.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/bts_L2_port.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../PRJ_COMMON/layer2/h/InterL2TxRxMsg.h_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsDacFsm.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsDacFsm.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_common/framework/h/os.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/aplib.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsDacFsm.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/DacFsm.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/frk.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/frk_os.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/btsTypes.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/DacMsg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Mac.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/layer2.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/DataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/DefaultConfig.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/aplib++.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L1L2_If.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/l2msg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/RsCrc.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/btsCommon.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/BtsConfig.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/MacMsg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2Msg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/DacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Dac.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/MacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/PerfMac.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Perf.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/PerfDac.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/Bts_L2L3_If.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2L3_If.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/l2_common.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsUserSessionTx.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsDacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/InterL2TxRxMsg.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/Sim_RrmScgTs.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Layer2.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/SharedCH.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/Bts_L1L2_If.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsVacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/VacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Vac.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/LogArea.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/UserSession.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsMacSessionTX.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2DiagLog.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsLayer2Tx.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsMacSessionTx.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsLayer2Base.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsMacMsg.h \
+	$(PRJ_DIR)/../../../../../prj_bts/common/h/L2L3MsgDef.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsDacFsm.cpp_objects
+BtsDacFsm.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsDacFsm.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsDacSession.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsDacSession.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_common/framework/h/os.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/aplib.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsDacFsm.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/DacFsm.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/frk.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/frk_os.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/btsTypes.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/DacMsg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Mac.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/layer2.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/DataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/DefaultConfig.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/aplib++.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L1L2_If.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/l2msg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/RsCrc.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/btsCommon.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/BtsConfig.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/MacMsg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2Msg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/DacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Dac.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/MacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/PerfMac.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Perf.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/PerfDac.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/Bts_L2L3_If.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2L3_If.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsDacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/InterL2TxRxMsg.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/Sim_RrmScgTs.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Layer2.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/SharedCH.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/Bts_L1L2_If.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/l2_common.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsLayer2Tx.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsMacSessionTx.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2DiagLog.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsUserSessionTx.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsVacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/VacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Vac.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/LogArea.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/UserSession.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsMacSessionTX.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsLayer2Base.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsMacMsg.h \
+	$(PRJ_DIR)/../../../../../prj_bts/common/h/L2L3MsgDef.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsDacSession.cpp_objects
+BtsDacSession.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsDacSession.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsUserSessionTx.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsUserSessionTx.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsUserSessionTx.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/layer2.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/DataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/DefaultConfig.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsDacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/DacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/btsCommon.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/os.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/btsTypes.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/BtsConfig.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Dac.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/frk_os.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Mac.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/aplib.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/aplib++.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L1L2_If.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/l2msg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/RsCrc.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/MacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/PerfMac.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Perf.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/DacFsm.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/frk.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/DacMsg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/MacMsg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2Msg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/PerfDac.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/Bts_L2L3_If.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2L3_If.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/InterL2TxRxMsg.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/Sim_RrmScgTs.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Layer2.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/SharedCH.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/Bts_L1L2_If.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsVacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/VacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Vac.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/LogArea.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/UserSession.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsMacSessionTX.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2DiagLog.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsLayer2Tx.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsMacSessionTx.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsLayer2Base.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsMacMsg.h \
+	$(PRJ_DIR)/../../../../../prj_bts/common/h/L2L3MsgDef.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/l2_common.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsUserSessionTx.cpp_objects
+BtsUserSessionTx.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsUserSessionTx.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsVacSession.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsVacSession.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_bts/layer2/Bts_L2L3_If.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/os.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/aplib.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/btsCommon.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/btsTypes.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/BtsConfig.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2L3_If.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/layer2.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/DataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/DefaultConfig.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2Msg.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsUserSessionTx.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsDacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/DacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Dac.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/frk_os.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Mac.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/aplib++.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L1L2_If.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/l2msg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/RsCrc.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/MacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/PerfMac.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Perf.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/DacFsm.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/frk.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/DacMsg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/MacMsg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/PerfDac.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/InterL2TxRxMsg.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/Sim_RrmScgTs.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Layer2.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/SharedCH.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/Bts_L1L2_If.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsVacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/VacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Vac.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/LogArea.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/UserSession.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsMacSessionTX.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2DiagLog.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/l2_common.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsVacSession.cpp_objects
+BtsVacSession.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsVacSession.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/framework/src/aplib.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/framework/src/aplib.c_dependencies
+$(PRJ_DIR)/../../../../../prj_common/framework/h/os.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/aplib.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/framework/src/aplib.c_objects
+aplib.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/framework/src/aplib.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/framework/src/frk.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/framework/src/frk.c_dependencies
+$(PRJ_DIR)/../../../../../prj_common/framework/h/os.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/aplib.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/frk.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/frk_os.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/framework/src/frk.c_objects
+frk.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/framework/src/frk.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/layer2/src/Dac.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/layer2/src/Dac.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_common/framework/h/os.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/aplib.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/aplib++.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/frk.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/frk_os.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/l2_common.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/RsCrc.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/btsCommon.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/btsTypes.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/BtsConfig.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/layer2.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/DataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/DefaultConfig.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Dac.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Mac.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L1L2_If.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/l2msg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/MacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/PerfMac.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Perf.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/DacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/DacFsm.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/DacMsg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/MacMsg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2Msg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/PerfDac.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsLayer2Tx.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsMacSessionTx.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/Bts_L1L2_If.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/Bts_L2L3_If.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2L3_If.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/SharedCH.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2DiagLog.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/Sim_RrmScgTs.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Layer2.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/InterL2TxRxMsg.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsUserSessionTx.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsDacSession.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsVacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/VacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Vac.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/LogArea.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/UserSession.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsMacSessionTX.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsLayer2Base.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsMacMsg.h \
+	$(PRJ_DIR)/../../../../../prj_bts/common/h/L2L3MsgDef.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/layer2/src/Dac.cpp_objects
+Dac.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/layer2/src/Dac.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/layer2/src/DacFsm.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/layer2/src/DacFsm.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_common/framework/h/os.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/aplib.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/DacFsm.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/frk.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/frk_os.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/btsTypes.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/DacMsg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Mac.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/layer2.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/DataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/DefaultConfig.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/aplib++.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L1L2_If.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/l2msg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/RsCrc.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/btsCommon.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/BtsConfig.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/MacMsg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2Msg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/DacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Dac.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/MacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/PerfMac.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Perf.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/PerfDac.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/l2_common.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/SharedCH.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/LogArea.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/layer2/src/DacFsm.cpp_objects
+DacFsm.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/layer2/src/DacFsm.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/layer2/src/DacSession_1.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/layer2/src/DacSession_1.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_common/framework/h/os.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/aplib.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/aplib++.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/frk.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/frk_os.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/l2_common.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/layer2.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/DataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/DefaultConfig.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Mac.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L1L2_If.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/l2msg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/RsCrc.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/btsCommon.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/btsTypes.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/BtsConfig.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/DacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Dac.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/MacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/PerfMac.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Perf.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/DacFsm.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/DacMsg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/MacMsg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2Msg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/PerfDac.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/UserSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Vac.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/LogArea.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/StatCounter.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsLayer2Tx.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsMacSessionTx.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/Bts_L1L2_If.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/Bts_L2L3_If.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2L3_If.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/SharedCH.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2DiagLog.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/Sim_RrmScgTs.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Layer2.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/InterL2TxRxMsg.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsUserSessionTx.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsDacSession.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsVacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/VacSession.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsMacSessionTX.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsLayer2Base.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsMacMsg.h \
+	$(PRJ_DIR)/../../../../../prj_bts/common/h/L2L3MsgDef.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/layer2/src/DacSession_1.cpp_objects
+DacSession_1.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/layer2/src/DacSession_1.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/layer2/src/DacSession_2.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/layer2/src/DacSession_2.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_common/framework/h/os.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/aplib.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/aplib++.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/frk.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/frk_os.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/layer2.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/DataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/DefaultConfig.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/l2_common.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Mac.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L1L2_If.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/l2msg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/RsCrc.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/btsCommon.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/btsTypes.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/BtsConfig.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/DacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Dac.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/MacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/PerfMac.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Perf.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/DacFsm.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/DacMsg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/MacMsg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2Msg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/PerfDac.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/UserSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Vac.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/LogArea.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/StatCounter.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsLayer2Tx.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsMacSessionTx.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/Bts_L1L2_If.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/Bts_L2L3_If.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2L3_If.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/SharedCH.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2DiagLog.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/Sim_RrmScgTs.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Layer2.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/InterL2TxRxMsg.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsUserSessionTx.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsDacSession.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsVacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/VacSession.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsMacSessionTX.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsLayer2Base.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsMacMsg.h \
+	$(PRJ_DIR)/../../../../../prj_bts/common/h/L2L3MsgDef.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/layer2/src/DacSession_2.cpp_objects
+DacSession_2.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/layer2/src/DacSession_2.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/layer2/src/ExecTimeCounter.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/layer2/src/ExecTimeCounter.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_common/framework/h/os.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/aplib.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/ExecTimeCounter.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/StatCounter.h \
+	$(PRJ_DIR)/../../../../../prj_bts/bts_bsp/McWill_L2/mv64360.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/layer2/src/ExecTimeCounter.cpp_objects
+ExecTimeCounter.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/layer2/src/ExecTimeCounter.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/layer2/src/Mac.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/layer2/src/Mac.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_common/layer2/h/btsCommon.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/os.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/btsTypes.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/BtsConfig.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/layer2.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/DataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/DefaultConfig.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/RsCrc.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Mac.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/aplib.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/aplib++.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L1L2_If.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/l2msg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/MacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/PerfMac.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Perf.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/layer2/src/Mac.cpp_objects
+Mac.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/layer2/src/Mac.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/layer2/src/MacSession.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/layer2/src/MacSession.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_common/layer2/h/btsCommon.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/os.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/btsTypes.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/BtsConfig.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/layer2.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/DataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/DefaultConfig.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/RsCrc.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Mac.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/aplib.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/aplib++.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L1L2_If.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/l2msg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/MacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/PerfMac.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Perf.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/UserSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/DacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Dac.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/frk_os.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/DacFsm.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/frk.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/DacMsg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/MacMsg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2Msg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/PerfDac.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Vac.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/LogArea.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/VacSession.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/layer2/src/MacSession.cpp_objects
+MacSession.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/layer2/src/MacSession.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/layer2/src/PerfDac.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/layer2/src/PerfDac.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_common/framework/h/os.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/iostream.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/streambuf.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/libio.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/powerpc-wrs-vxworks/include/_G_config.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stdio-lock.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/iomanip.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/PerfDac.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Perf.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/layer2/src/PerfDac.cpp_objects
+PerfDac.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/layer2/src/PerfDac.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/layer2/src/PerfMac.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/layer2/src/PerfMac.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_common/framework/h/os.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/iostream.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/streambuf.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/libio.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/powerpc-wrs-vxworks/include/_G_config.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stdio-lock.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/iomanip.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/PerfMac.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Perf.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/layer2/src/PerfMac.cpp_objects
+PerfMac.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/layer2/src/PerfMac.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/layer2/src/RsCrc.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/layer2/src/RsCrc.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_common/layer2/h/RsCrc.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/btsCommon.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/os.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/btsTypes.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/BtsConfig.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/layer2.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/DataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/DefaultConfig.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/layer2/src/RsCrc.cpp_objects
+RsCrc.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/layer2/src/RsCrc.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/layer2/src/StatCounter.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/layer2/src/StatCounter.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_common/framework/h/os.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/aplib.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/StatCounter.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/layer2/src/StatCounter.cpp_objects
+StatCounter.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/layer2/src/StatCounter.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/layer2/src/UserSession.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/layer2/src/UserSession.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_common/layer2/h/UserSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/btsCommon.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/os.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/btsTypes.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/BtsConfig.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/layer2.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/DataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/DefaultConfig.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/DacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Dac.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/frk_os.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Mac.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/aplib.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/aplib++.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L1L2_If.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/l2msg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/RsCrc.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/MacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/PerfMac.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Perf.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/DacFsm.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/frk.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/DacMsg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/MacMsg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2Msg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/PerfDac.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Vac.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/LogArea.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/layer2/src/UserSession.cpp_objects
+UserSession.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/layer2/src/UserSession.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/layer2/src/Vac.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/layer2/src/Vac.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_common/framework/h/os.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/frk_os.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Vac.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/LogArea.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Mac.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/layer2.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/DataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/DefaultConfig.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/aplib.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/aplib++.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L1L2_If.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/l2msg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/RsCrc.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/btsCommon.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/btsTypes.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/BtsConfig.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/l2_common.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/layer2/src/Vac.cpp_objects
+Vac.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/layer2/src/Vac.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/layer2/src/VacSessionIf.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/layer2/src/VacSessionIf.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_common/layer2/h/UserSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/btsCommon.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/os.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/btsTypes.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/BtsConfig.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/layer2.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/DataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/DefaultConfig.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/DacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Dac.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/frk_os.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Mac.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/aplib.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/aplib++.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L1L2_If.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/l2msg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/RsCrc.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/MacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/PerfMac.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Perf.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/DacFsm.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/frk.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/DacMsg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/MacMsg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2Msg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/PerfDac.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Vac.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/LogArea.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/VacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/l2_common.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/SharedCH.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2L3_If.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/layer2/src/VacSessionIf.cpp_objects
+VacSessionIf.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/layer2/src/VacSessionIf.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/layer2/src/VacSessionMsgProc.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/layer2/src/VacSessionMsgProc.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_common/layer2/h/UserSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/btsCommon.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/os.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/btsTypes.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/BtsConfig.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/layer2.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/DataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/DefaultConfig.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/DacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Dac.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/frk_os.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Mac.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/aplib.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/aplib++.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L1L2_If.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/l2msg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/RsCrc.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/MacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/PerfMac.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Perf.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/DacFsm.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/frk.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/DacMsg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/MacMsg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2Msg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/PerfDac.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/Vac.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/LogArea.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/VacSession.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/l2_common.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/SharedCH.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2L3_If.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/layer2/src/VacSessionMsgProc.cpp_objects
+VacSessionMsgProc.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/layer2/src/VacSessionMsgProc.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/layer2/src/l2_common.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/layer2/src/l2_common.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_common/framework/h/os.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/aplib.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/aplib++.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/frk.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/frk_os.h \
+	$(PRJ_DIR)/../../../../../prj_common/framework/h/frk++.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Message.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComEntity.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/PtrList.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/layer2.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/DataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/DefaultConfig.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/l2msg.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/l2_port.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/l2_common.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/Bts_L2L3_If.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/btsCommon.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/btsTypes.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/BtsConfig.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2L3_If.h \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/h/L2Msg.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/Bts_L2.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/layer2/src/l2_common.cpp_objects
+l2_common.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_common/layer2/src/l2_common.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> PROJECT_FILES
+$(PRJ_DIR)/../../../../../prj_common/framework/src/frk.c \
+	$(PRJ_DIR)/../../../../../prj_common/framework/src/aplib.c \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsVacSession.cpp \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/src/Dac.cpp \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/src/DacFsm.cpp \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/src/Mac.cpp \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/src/MacSession.cpp \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/src/PerfDac.cpp \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/src/PerfMac.cpp \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/src/RsCrc.cpp \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/src/UserSession.cpp \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/src/Vac.cpp \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsDacSession.cpp \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsDacFsm.cpp \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/src/ExecTimeCounter.cpp \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/src/StatCounter.cpp \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/src/DacSession_2.cpp \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/src/DacSession_1.cpp \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/src/l2_common.cpp \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/src/VacSessionIf.cpp \
+	$(PRJ_DIR)/../../../../../prj_common/layer2/src/VacSessionMsgProc.cpp \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/Sim_RrmScgTs.cpp \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/Bts_L2Tx.cpp \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/BtsL2OamIfTx.cpp \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/BtsLayer2Base.cpp \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/BtsLayer2Tx.cpp \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/BtsMacSessionTx.cpp \
+	$(PRJ_DIR)/../../../../../prj_bts/layer2/BtsUserSessionTx.cpp \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/L2EntityBtsInL3.cpp \
+	$(PRJ_DIR)/../../../../../PRJ_BTS/layer2/bts_L2_port.c \
+	$(PRJ_DIR)/../../../../../PRJ_COMMON/layer2/h/InterL2TxRxMsg.h
+<END>
+
+<BEGIN> userComments
+<Enter description here>
+<END>
+

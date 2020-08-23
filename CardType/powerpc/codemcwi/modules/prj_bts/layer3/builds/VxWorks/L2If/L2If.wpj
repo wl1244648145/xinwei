@@ -1,0 +1,321 @@
+Document file - DO NOT EDIT
+
+<BEGIN> BUILD_L3_lib_BUILDRULE
+archive
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_AR
+arppc
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_ARCHIVE
+$(PRJ_DIR)/L3_lib/L2If.a
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_AS
+ccppc
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_CC
+ccppc
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_CC_ARCH_SPEC
+-mcpu=604 -mstrict-align
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_CFLAGS
+-O3 \
+	-mcpu=604 \
+	-mstrict-align \
+	-ansi \
+	-fno-builtin \
+	-I. \
+	-I$(WIND_BASE)/target/h/ \
+	-I$(PRJ_DIR)/../../../../../prj_common/APFramework/H \
+	-I$(PRJ_DIR)/../../../../../prj_bts/layer3/UtAgent \
+	-I$(PRJ_DIR)/../../../../../prj_common/include \
+	-I$(WIND_BASE)/target/config/McWill_L3 \
+	-I$(PRJ_DIR)/../../../../../prj_bts/bts_bsp/src \
+	-I$(PRJ_DIR)/../../../../../prj_bts/common/h \
+	-I$(PRJ_DIR)/../L3_bsp \
+	-I$(WIND_BASE)/target/h/drv/timer \
+	-I$(WIND_BASE)/target/config/all \
+	-DCPU=PPC604 \
+	-DTOOL_FAMILY=gnu \
+	-DTOOL=gnu \
+	-DM_TGT_L3 \
+	-DNDEBUG
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_CFLAGS_AS
+-g \
+	-mcpu=604 \
+	-mstrict-align \
+	-ansi \
+	-fno-builtin \
+	-P \
+	-xassembler-with-cpp \
+	-I. \
+	-I$(WIND_BASE)/target/h/ \
+	-DCPU=PPC604 \
+	-DTOOL_FAMILY=gnu \
+	-DTOOL=gnu
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_CPP
+ccppc -E -P
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_HEX_FLAGS
+
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_LD
+ldppc
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_LDDEPS
+
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_LDFLAGS
+-X -N
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_LD_PARTIAL
+ccppc -r -nostdlib -Wl,-X
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_LD_PARTIAL_FLAGS
+-X -r
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_NM
+nmppc
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_OPTION_DEFINE_MACRO
+-D
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_OPTION_DEPEND
+-M -w
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_OPTION_GENERATE_DEPENDENCY_FILE
+-MD
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_OPTION_INCLUDE_DIR
+-I
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_OPTION_LANG_C
+-xc
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_OPTION_UNDEFINE_MACRO
+-U
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_POST_BUILD_RULE
+
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_PRJ_LIBS
+
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_SIZE
+sizeppc
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_TOOL_FAMILY
+gnu
+<END>
+
+<BEGIN> BUILD_L3_lib_RO_DEPEND_PATH
+{$(WIND_BASE)/target/h/} \
+	{$(WIND_BASE)/target/src/} \
+	{$(WIND_BASE)/target/config/}
+<END>
+
+<BEGIN> BUILD_L3_lib_TC
+::tc_PPC604gnu
+<END>
+
+<BEGIN> BUILD_RULE_L2If.out
+
+<END>
+
+<BEGIN> BUILD_RULE_L2If.pl
+
+<END>
+
+<BEGIN> BUILD_RULE_archive
+
+<END>
+
+<BEGIN> BUILD_RULE_objects
+
+<END>
+
+<BEGIN> BUILD__CURRENT
+L3_lib
+<END>
+
+<BEGIN> BUILD__LIST
+L3_lib
+<END>
+
+<BEGIN> CORE_INFO_TYPE
+::prj_vxApp
+<END>
+
+<BEGIN> CORE_INFO_VERSION
+2.2
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/bts_bsp/src/sysDma.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/bts_bsp/src/sysDma.cpp_dependencies
+$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/iostream.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/streambuf.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/libio.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/powerpc-wrs-vxworks/include/_G_config.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stdio-lock.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/iomanip.h \
+	$(PRJ_DIR)/../../../../../prj_bts/bts_bsp/src/sysDma.h \
+	$(PRJ_DIR)/../../../../../prj_bts/common/h/btsTypes.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/bts_bsp/src/sysDma.cpp_objects
+sysDma.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/bts_bsp/src/sysDma.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/common/PciIf/PciIf.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/common/PciIf/PciIf.cpp_dependencies
+$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(PRJ_DIR)/../../../../../prj_bts/common/PciIf/PciIf.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Task.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComEntity.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/PtrList.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/dataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskDef.h \
+	$(PRJ_DIR)/../../../../../prj_bts/bts_bsp/src/sysDma.h \
+	$(PRJ_DIR)/../../../../../prj_bts/common/h/btsTypes.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/logArea.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/common/PciIf/PciIf.cpp_objects
+PciIf.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/common/PciIf/PciIf.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/L2PciShell/L2PciShell.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/L2PciShell/L2PciShell.cpp_dependencies
+$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/L2PciShell/L2PciShell.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComEntity.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/PtrList.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/dataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskDef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/L3L2MessageId.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BizTask.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Task.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/L2PciShell/L2PciShell.cpp_objects
+L2PciShell.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/L2PciShell/L2PciShell.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/UtAgent/UtAgent.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/UtAgent/UtAgent.cpp_dependencies
+$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/UtAgent/UtAgent.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComEntity.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/PtrList.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/dataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskDef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/L3L2MessageId.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/UtAgent/UtAgent.cpp_objects
+UtAgent.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/UtAgent/UtAgent.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> PROJECT_FILES
+$(PRJ_DIR)/../../../../../prj_bts/layer3/UtAgent/UtAgent.cpp \
+	$(PRJ_DIR)/../../../../../prj_bts/common/PciIf/PciIf.cpp \
+	$(PRJ_DIR)/../../../../../prj_bts/bts_bsp/src/sysDma.cpp \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/L2PciShell/L2PciShell.cpp
+<END>
+
+<BEGIN> userComments
+<Enter description here>
+<END>
+

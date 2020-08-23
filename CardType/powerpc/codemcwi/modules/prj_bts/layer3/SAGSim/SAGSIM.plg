@@ -1,0 +1,42 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: SAGSIM - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\gg\LOCALS~1\Temp\RSP139F.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /I "H" /I "C:/prj_mcwill/prj_common/apframework/h" /I "c:/prj_mcwill/prj_common/apframework/src" /I "./../messages/voicemsgs/H" /I "c:/prj_mcwill/prj_common/" /D "PRJ_BUILD" /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /D "__WIN32_SIM__" /D "M_TGT_L3" /D "NDEBUG" /D "__UNITTEST__" /FR"Debug/" /Fp"Debug/SAGSIM.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\SAGSim\SRC\SAGSignal.cpp"
+"C:\SAGSim\SRC\SAGSim.cpp"
+"C:\SAGSim\SRC\tVoiceSignal.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\gg\LOCALS~1\Temp\RSP139F.tmp" 
+Creating temporary file "C:\DOCUME~1\gg\LOCALS~1\Temp\RSP13A0.tmp" with contents
+[
+FWKLIBwdBTS.lib winmm.lib ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/SAGSIM.pdb" /debug /machine:I386 /out:"Debug/SAGSIM.exe" /pdbtype:sept 
+.\Debug\SAGSignal.obj
+.\Debug\SAGSim.obj
+.\Debug\tVoiceData.obj
+.\Debug\tVoiceSignal.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\gg\LOCALS~1\Temp\RSP13A0.tmp"
+<h3>Output Window</h3>
+Compiling...
+SAGSim.cpp
+SAGSignal.cpp
+tVoiceSignal.cpp
+Linking...
+Creating command line "bscmake.exe /nologo /o"Debug/SAGSIM.bsc"  .\Debug\SAGSignal.sbr .\Debug\SAGSim.sbr .\Debug\tVoiceData.sbr .\Debug\tVoiceSignal.sbr"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+SAGSIM.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

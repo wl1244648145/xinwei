@@ -1,0 +1,1712 @@
+测试次数,日志行号,基带板dsp1,基带板dsp2,基带板dsp3,基带板dsp4,基带板srio,es板fpga,fs板fpga325t,fs板fpga160t,复位原因,ppc ethsw,AFC
+1,27,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc4020002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+2,1056,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+3,2085,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc4020002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+4,3114,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+5,4142,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+6,5172,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+7,6199,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+8,7225,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+9,8252,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc4020002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+10,9280,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+11,10307,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc4020002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+12,11334,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc4020002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+13,12364,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+14,13390,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+15,14417,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+16,15447,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+17,16476,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+18,17504,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc4020002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+19,18533,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0020002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+20,19558,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+21,20585,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+22,21612,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+23,22640,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+24,23667,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+25,24693,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+26,25721,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+27,26750,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+28,27778,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc4020002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+29,28807,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0020002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+30,29835,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+31,30861,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+32,31886,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+33,32915,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc4020002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+34,33944,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc4020002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+35,34974,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+36,36001,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+37,37028,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc4020002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+38,38059,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+39,39089,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc4020002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+40,40117,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+41,41142,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+42,42167,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+43,43193,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc4020002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+44,44221,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+45,45250,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 readyp3 s32NumBytes = 300
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc4020002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+46,46277,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+47,47305,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc4020002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+48,48337,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc4020002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['ipaddr used greatest stack depth: 5712 bytes left\n', 'u8Isinited=0, u8ResetCause=0x0\n']",NULL,OK
+49,49365,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+50,50395,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+51,51423,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+52,52450,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+53,53476,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+54,54505,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+55,55533,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+56,56560,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+57,57588,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc4020002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+58,58619,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+59,59647,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+60,60674,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc4020002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+61,61704,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+62,62732,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+63,63758,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+64,64785,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+65,65813,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+66,66840,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc4020002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+67,67868,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+68,68896,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+69,69922,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+70,70949,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+71,71977,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+72,73004,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+73,74031,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+74,75057,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+75,76084,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc4020002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+76,77112,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+77,78139,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+78,79165,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+79,80192,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+80,81219,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+81,82247,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc4020002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+82,83275,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0020002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+83,84304,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc4020002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+84,85332,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc4020002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+85,86361,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc4020002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+86,87390,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc4020002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+87,88422,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+88,89450,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+89,90477,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+90,91504,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+91,92531,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+92,93557,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+93,94584,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc4020002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+94,95611,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+95,96637,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc4020002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+96,97668,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+97,98694,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc4020002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+98,99725,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+99,100752,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",NULL,OK
+100,101776,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+101,102803,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+102,103831,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+103,104859,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc4020002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+104,105888,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+105,106915,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc4020002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+106,107944,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+107,108970,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+108,109998,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+109,111027,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc4020002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+110,112058,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+111,113084,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+112,114110,NULL,NULL,NULL,NULL,"[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+113,115126,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+114,116153,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc4020002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+115,117182,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+116,118208,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+117,119241,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc4020002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+118,120269,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc4020002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+119,121298,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+120,122325,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc4020002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+121,123354,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+122,124381,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+123,125407,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+124,126434,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc4020002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+125,127465,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+126,128494,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+127,129524,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+128,130551,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+129,131580,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+130,132607,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+131,133633,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+132,134663,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+133,135690,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc4020002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+134,136721,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+135,137751,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+136,138779,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+137,139809,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc4020002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+138,140838,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+139,141865,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+140,142893,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+141,143920,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0xc\n']",OK,OK
+142,144946,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0xc\n']",OK,OK
+143,145972,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0xc\n']",OK,OK
+144,146999,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc4020002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+145,148031,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+146,149058,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc4020002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+147,150087,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+148,151114,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc4020002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+149,152143,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+150,153170,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+151,154197,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+152,155222,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc4020002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+153,156252,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+154,157281,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+155,158308,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+156,159336,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+157,160363,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+158,161390,NULL,NULL,NULL,NULL,"[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc4020002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+159,162411,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+160,163438,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc4020002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+161,164466,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc4020002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+162,165495,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+163,166521,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0xc\n']",OK,OK
+164,167549,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+165,168577,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0xc\n']",OK,OK
+166,169605,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc4020002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+167,170636,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+168,171663,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+169,172690,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+170,173717,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+171,174744,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc4020002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+172,175773,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+173,176802,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc4020002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+174,177830,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+175,178856,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+176,179881,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc4020002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+177,180913,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc4020002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+178,181943,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+179,182971,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+180,183997,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+181,185022,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+182,186049,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+183,187076,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc4020002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+184,188105,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc4020002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+185,189134,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc4020002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+186,190163,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+187,191191,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc0000002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+188,192220,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc4020002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+189,193248,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc4020002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+190,194276,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc4020002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK
+191,195305,"slot5 dsp1 ready.
+","slot5 dsp2 ready.
+","slot5 dsp3 ready.
+","slot5 dsp4 ready.
+","[5]srio port status:0xc0000002,0xc0000002,0xc0000002,0xc4020002,0xc0000002
+","[192.168.6.100:6]fpga load success!
+","[192.168.7.100:7]fsa_fpga_325t load success!
+","[192.168.7.100:7]fsa_fpga_160t load success!
+","['u8Isinited=0, u8ResetCause=0x0\n', 'over, u8Isinited=1, u8ResetCause=0x8\n']",OK,OK

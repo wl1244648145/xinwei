@@ -1,0 +1,2017 @@
+Document file - DO NOT EDIT
+
+<BEGIN> BUILD_L3_lib_BUILDRULE
+archive
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_AR
+arppc
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_ARCHIVE
+$(PRJ_DIR)/L3_lib/Voice.a
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_AS
+ccppc
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_CC
+ccppc
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_CC_ARCH_SPEC
+-mcpu=604 -mstrict-align
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_CFLAGS
+-O3 \
+	-mcpu=604 \
+	-mstrict-align \
+	-ansi \
+	-fno-builtin \
+	-I. \
+	-I$(WIND_BASE)/target/h/ \
+	-I$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H \
+	-I$(PRJ_DIR)/../../../../../prj_bts_split/layer3/COMMON \
+	-I$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H \
+	-I$(PRJ_DIR)/../../../../../prj_common/APFramework/H \
+	-I$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC \
+	-I$(PRJ_DIR)/../../../../../prj_common/include \
+	-I$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVCR/H \
+	-I$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVDR/H \
+	-I$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/h \
+	-I$(PRJ_DIR)/../../../../../prj_bts_split/layer3/OAM \
+	-I$(PRJ_DIR)/../../../../../prj_common/include \
+	-I$(PRJ_DIR)/../../../../../prj_bts_split/layer3/NATAP \
+	-I$(PRJ_DIR)/../../../../../prj_bts_split/bts_bsp/all \
+	-I$(PRJ_DIR)/../../../../../prj_bts_split/bts_bsp/McWill_L3 \
+	-DCPU=PPC604 \
+	-DTOOL_FAMILY=gnu \
+	-DTOOL=gnu \
+	-DM_TGT_L3 \
+	-fsigned-char \
+	-DNDEBUG \
+	-D__VXWORKS__
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_CFLAGS_AS
+-g \
+	-mcpu=604 \
+	-mstrict-align \
+	-ansi \
+	-fno-builtin \
+	-P \
+	-xassembler-with-cpp \
+	-I. \
+	-I$(WIND_BASE)/target/h/ \
+	-DCPU=PPC604 \
+	-DTOOL_FAMILY=gnu \
+	-DTOOL=gnu
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_CPP
+ccppc -E -P
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_HEX_FLAGS
+
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_LD
+ldppc
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_LDDEPS
+
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_LDFLAGS
+-X -N
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_LD_PARTIAL
+ccppc -r -nostdlib -Wl,-X
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_LD_PARTIAL_FLAGS
+-X -r
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_NM
+nmppc
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_OPTION_DEFINE_MACRO
+-D
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_OPTION_DEPEND
+-M -w
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_OPTION_GENERATE_DEPENDENCY_FILE
+-MD
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_OPTION_INCLUDE_DIR
+-I
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_OPTION_LANG_C
+-xc
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_OPTION_UNDEFINE_MACRO
+-U
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_POST_BUILD_RULE
+
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_PRJ_LIBS
+
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_SIZE
+sizeppc
+<END>
+
+<BEGIN> BUILD_L3_lib_MACRO_TOOL_FAMILY
+gnu
+<END>
+
+<BEGIN> BUILD_L3_lib_RO_DEPEND_PATH
+{$(WIND_BASE)/target/h/} \
+	{$(WIND_BASE)/target/src/} \
+	{$(WIND_BASE)/target/config/}
+<END>
+
+<BEGIN> BUILD_L3_lib_TC
+::tc_PPC604gnu
+<END>
+
+<BEGIN> BUILD_RULE_Voice.out
+
+<END>
+
+<BEGIN> BUILD_RULE_Voice.pl
+
+<END>
+
+<BEGIN> BUILD_RULE_archive
+
+<END>
+
+<BEGIN> BUILD_RULE_objects
+
+<END>
+
+<BEGIN> BUILD__CURRENT
+L3_lib
+<END>
+
+<BEGIN> BUILD__LIST
+L3_lib
+<END>
+
+<BEGIN> CORE_INFO_TYPE
+::prj_vxApp
+<END>
+
+<BEGIN> CORE_INFO_VERSION
+2.2
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/NATAP/NatPiApp.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/NATAP/NatPiApp.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/voiceCommon.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/logarea.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/NATAP/NatPiApp.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/NATAP/NatPi.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Timer.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Message.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComEntity.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/PtrList.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/dataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/NATAP/NatPiApp.cpp_objects
+NatPiApp.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/NATAP/NatPiApp.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/NATAP/NatAuth.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/NATAP/NatAuth.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_bts_split/layer3/NATAP/md5.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/NATAP/sha1.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/NATAP/NatAuth.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/NATAP/NatAuth.cpp_objects
+NatAuth.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/NATAP/NatAuth.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/NATAP/NatPi.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/NATAP/NatPi.cpp_dependencies
+$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/tVoice.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BizTask.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Task.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComEntity.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/PtrList.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/dataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/voiceFsm.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/typeinfo \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/exception \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/fsm.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/timer.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Message.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/voiceCommon.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/logarea.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/VAC_session_interface.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/timeoutVoiceMsg.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/Voice_msgs_struct.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/map \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_tree.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_algobase.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_config.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/powerpc-wrs-vxworks/include/_G_config.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_relops.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_pair.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/type_traits.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/new.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/new \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/iostream.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/streambuf.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/libio.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stdio-lock.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_iterator.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_alloc.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_construct.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_function.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_map.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_multimap.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/list \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_uninitialized.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_list.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/NATAP/NatPi.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Timer.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/NATAP/NatAuth.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/voiceToolFunc.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/NATAP/NatPi.cpp_objects
+NatPi.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/NATAP/NatPi.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/NATAP/md5.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/NATAP/md5.c_dependencies
+$(PRJ_DIR)/../../../../../prj_bts_split/layer3/NATAP/md5.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/NATAP/md5.c_objects
+md5.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/NATAP/md5.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/NATAP/sha1.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/NATAP/sha1.c_dependencies
+$(PRJ_DIR)/../../../../../prj_bts_split/layer3/NATAP/sha1.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/NATAP/sha1.c_objects
+sha1.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/NATAP/sha1.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVCR/SRC/tVCR.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVCR/SRC/tVCR.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVCR/H/tVCR.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Task.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComEntity.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/PtrList.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/dataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/tVoice.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BizTask.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/voiceFsm.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/typeinfo \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/exception \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/fsm.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/timer.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Message.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/voiceCommon.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/logarea.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/VAC_session_interface.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/timeoutVoiceMsg.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/Voice_msgs_struct.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/map \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_tree.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_algobase.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_config.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/powerpc-wrs-vxworks/include/_G_config.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_relops.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_pair.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/type_traits.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/new.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/new \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/iostream.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/streambuf.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/libio.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stdio-lock.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_iterator.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_alloc.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_construct.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_function.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_map.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_multimap.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/list \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_uninitialized.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_list.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/voice_msgs_struct.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/CallSignalMsg.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/cpe_msgs_struct.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/voicecfg.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/NATAP/natpi.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Timer.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/COMMON/L3voiceMsgID.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/L3L2MessageID.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/COMMON/L3OAMMessageId.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/commessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/mutex.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/NATAP/NatPi.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/COMMON/l3oammessageid.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/OAM/L3OamCpeM.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/TimeOutNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/h/L3oamCpeRegNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/h/L3oamCpeCommon.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/h/L3OamCfgCommon.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/OAM/L3OamCommon.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/h/L3OamCpeLocationNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/h/L3OamCpeProfUpdateReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/h/L3OamCpeCommonReq.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/L3CpeMessageId.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/h/L3OamCpeSwitchOffNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/h/L3OamCpeReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/OAM/L3OamCpeFSM.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/COMMON/L3EmsMessageId.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/h/L3L3L2CpeRegNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/h/L3OAMAuth.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/L3CPEMessageId.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/COMMON/L3VoiceMsgId.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/OAM/L3OAMcommon.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/h/L3OAMcpeCommon.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/COMMON/ErrorCodeDef.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/LogArea.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/OAM/L3OamRpt.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/bts_bsp/McWill_L3/sysBtsConfigData.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/bts_bsp/all/sysBootLoad.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/voiceToolFunc.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagCfg.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagDialPlan.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVCR/SRC/tVCR.cpp_objects
+tVCR.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVCR/SRC/tVCR.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVDR/SRC/tVDR.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVDR/SRC/tVDR.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVCR/H/tVCR.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Task.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComEntity.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/PtrList.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/dataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/tVoice.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BizTask.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/voiceFsm.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/typeinfo \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/exception \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/fsm.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/timer.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Message.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/voiceCommon.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/logarea.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/VAC_session_interface.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/timeoutVoiceMsg.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/Voice_msgs_struct.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/map \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_tree.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_algobase.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_config.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/powerpc-wrs-vxworks/include/_G_config.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_relops.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_pair.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/type_traits.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/new.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/new \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/iostream.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/streambuf.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/libio.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stdio-lock.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_iterator.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_alloc.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_construct.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_function.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_map.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_multimap.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/list \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_uninitialized.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_list.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/voice_msgs_struct.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/CallSignalMsg.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/cpe_msgs_struct.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/voicecfg.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/NATAP/natpi.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Timer.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVDR/H/tVDR.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/COMMON/L3voiceMsgID.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/L3L2MessageID.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/COMMON/L3OAMMessageId.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/NATAP/NatPi.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/bts_bsp/McWill_L3/sysBtsConfigData.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/bts_bsp/all/sysBootLoad.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVDR/SRC/tVDR.cpp_objects
+tVDR.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVDR/SRC/tVDR.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/DBroadCastMsg.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/DBroadCastMsg.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/DBroadCastMsg.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/DBroadCastStruct.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/DBroadCastCommon.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/message.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComEntity.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/PtrList.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/dataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/tcpE.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/DBroadCastMsg.cpp_objects
+DBroadCastMsg.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/DBroadCastMsg.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/DBroadCastSrv.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/DBroadCastSrv.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/DBroadCastSrv.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/DBroadCastCommon.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/voiceFsm.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/dataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/fsm.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/timer.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Message.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComEntity.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/PtrList.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/voiceCommon.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/logarea.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/VAC_session_interface.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/timeoutVoiceMsg.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/Voice_msgs_struct.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/map \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_tree.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_algobase.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_config.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/powerpc-wrs-vxworks/include/_G_config.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_relops.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_pair.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/type_traits.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/new.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/new \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/exception \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/iostream.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/streambuf.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/libio.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stdio-lock.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_iterator.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_alloc.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_construct.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_function.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_map.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_multimap.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/list \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_uninitialized.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_list.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/DBroadCastSrv.cpp_objects
+DBroadCastSrv.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/DBroadCastSrv.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/VoiceCfg.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/VoiceCfg.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/VoiceCfg.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/dataType.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/VoiceToolFunc.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComEntity.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/PtrList.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/h/L3OamCfgCommon.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/OAM/L3OamCommon.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/bts_bsp/McWill_L3/sysBtsConfigData.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/bts_bsp/all/sysBootLoad.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/VoiceCfg.cpp_objects
+VoiceCfg.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/VoiceCfg.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/dataGrpLink.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/dataGrpLink.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/dataGrpLink.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Task.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComEntity.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/PtrList.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/dataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/tVoice.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BizTask.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/voiceFsm.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/fsm.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/timer.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Message.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/voiceCommon.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/logarea.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/VAC_session_interface.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/timeoutVoiceMsg.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/Voice_msgs_struct.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/map \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_tree.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_algobase.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_config.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/powerpc-wrs-vxworks/include/_G_config.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_relops.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_pair.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/type_traits.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/new.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/new \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/exception \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/iostream.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/streambuf.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/libio.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stdio-lock.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_iterator.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_alloc.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_construct.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_function.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_map.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_multimap.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/list \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_uninitialized.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_list.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/voice_msgs_struct.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/CallSignalMsg.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/cpe_msgs_struct.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/voicecfg.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/NATAP/natpi.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Timer.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/tcpE.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/COMMON/L3voiceMsgID.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/L3L2MessageID.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/COMMON/L3OAMMessageId.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/commessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/mutex.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/NATAP/NatPi.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/COMMON/l3oammessageid.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/OAM/L3OamCpeM.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/TimeOutNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/h/L3oamCpeRegNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/h/L3oamCpeCommon.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/h/L3OamCfgCommon.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/OAM/L3OamCommon.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/h/L3OamCpeLocationNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/h/L3OamCpeProfUpdateReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/h/L3OamCpeCommonReq.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/L3CpeMessageId.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/h/L3OamCpeSwitchOffNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/h/L3OamCpeReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/OAM/L3OamCpeFSM.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/COMMON/L3EmsMessageId.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/h/L3L3L2CpeRegNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/h/L3OAMAuth.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/L3CPEMessageId.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/COMMON/L3VoiceMsgId.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/OAM/L3OAMcommon.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/h/L3OAMcpeCommon.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/COMMON/ErrorCodeDef.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/LogArea.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/OAM/L3OamRpt.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/bts_bsp/McWill_L3/sysBtsConfigData.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/bts_bsp/all/sysBootLoad.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/voiceToolFunc.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagCfg.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagDialPlan.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagMsgID.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/dataGrpLink.cpp_objects
+dataGrpLink.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/dataGrpLink.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/localSag.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/localSag.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSag.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/string \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/std/bastring.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/cstddef \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/std/straits.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/cctype \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/cstring \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/alloc.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_config.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/powerpc-wrs-vxworks/include/_G_config.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_alloc.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/new \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/exception \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/iterator \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_relops.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/iostream.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/streambuf.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/libio.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stdio-lock.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_iterator.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/std/bastring.cc \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/map \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_tree.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_algobase.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_pair.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/type_traits.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/new.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_construct.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_function.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_map.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_multimap.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/list \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_uninitialized.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_list.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/vector \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_vector.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_bvector.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/dataType.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagCommon.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/voiceCommon.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/logarea.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagCCB.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Timer.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Message.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComEntity.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/PtrList.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagTimer.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/timer.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagFsm.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/message.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSAGTimer.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/CallSignalMsg.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/voice_msgs_struct.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/cpe_msgs_struct.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagStruct.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagMsgID.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagCfg.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagDialPlan.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagFsmCfg.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/voiceToolFunc.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/cpe_signal_struct.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/tVoice.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BizTask.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Task.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/voiceFsm.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/typeinfo \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/fsm.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/VAC_session_interface.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/timeoutVoiceMsg.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/Voice_msgs_struct.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/COMMON/L3VoiceMsgID.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/L3L2MessageID.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/COMMON/L3OAMMessageId.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/OtherMsg.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/voiceTone.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSAGTask.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/localSag.cpp_objects
+localSag.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/localSag.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/localSagCCB.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/localSagCCB.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagCCB.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Timer.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Message.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComEntity.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/PtrList.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/dataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagTimer.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/timer.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagCommon.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/voiceCommon.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/logarea.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagStruct.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSag.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/string \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/std/bastring.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/cstddef \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/std/straits.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/cctype \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/cstring \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/alloc.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_config.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/powerpc-wrs-vxworks/include/_G_config.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_alloc.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/new \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/exception \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/iterator \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_relops.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/iostream.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/streambuf.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/libio.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stdio-lock.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_iterator.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/std/bastring.cc \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/map \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_tree.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_algobase.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_pair.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/type_traits.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/new.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_construct.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_function.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_map.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_multimap.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/list \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_uninitialized.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_list.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/vector \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_vector.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_bvector.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/log.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagFsm.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/message.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSAGTimer.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/CallSignalMsg.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/voice_msgs_struct.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/cpe_msgs_struct.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagFsmCfg.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagMsgID.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/voiceToolFunc.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/tVoice.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BizTask.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Task.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/voiceFsm.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/typeinfo \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/fsm.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/VAC_session_interface.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/timeoutVoiceMsg.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/Voice_msgs_struct.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/voiceTone.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/cpe_signal_struct.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/localSagCCB.cpp_objects
+localSagCCB.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/localSagCCB.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/localSagCfg.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/localSagCfg.cpp_dependencies
+$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/h/l3OamCfgCommon.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/OAM/L3OamCommon.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/dataType.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagCfg.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagDialPlan.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/localSagCfg.cpp_objects
+localSagCfg.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/localSagCfg.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/localSagDialPlan.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/localSagDialPlan.cpp_dependencies
+$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagDialPlan.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/localSagDialPlan.cpp_objects
+localSagDialPlan.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/localSagDialPlan.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/localSagFsm.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/localSagFsm.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagFsm.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/message.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComEntity.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/PtrList.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/dataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagCCB.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Timer.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagTimer.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/timer.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagCommon.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/voiceCommon.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/logarea.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagFsmCfg.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSag.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/string \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/std/bastring.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/cstddef \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/std/straits.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/cctype \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/cstring \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/alloc.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_config.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/powerpc-wrs-vxworks/include/_G_config.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_alloc.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/new \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/exception \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/iterator \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_relops.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/iostream.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/streambuf.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/libio.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stdio-lock.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_iterator.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/std/bastring.cc \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/map \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_tree.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_algobase.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_pair.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/type_traits.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/new.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_construct.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_function.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_map.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_multimap.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/list \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_uninitialized.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_list.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/vector \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_vector.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_bvector.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/log.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSAGTimer.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/CallSignalMsg.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Message.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/voice_msgs_struct.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/cpe_msgs_struct.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagStruct.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagMsgID.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/callSignalMsg.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/voiceToolFunc.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/COMMON/l3VoiceMsgID.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/L3L2MessageID.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/COMMON/L3OAMMessageId.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/localSagFsm.cpp_objects
+localSagFsm.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/localSagFsm.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/localSagFsmCfg.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/localSagFsmCfg.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagMsgID.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagFsm.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/message.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComEntity.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/PtrList.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/dataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagCCB.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Timer.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagTimer.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/timer.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagCommon.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/voiceCommon.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/logarea.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagFsmCfg.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/COMMON/l3VoiceMsgID.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/L3L2MessageID.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/COMMON/L3OAMMessageId.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/localSagFsmCfg.cpp_objects
+localSagFsmCfg.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/localSagFsmCfg.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/localSagFsmProc.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/localSagFsmProc.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/voiceToolFunc.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComEntity.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/PtrList.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/dataType.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/voiceTone.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/cpe_signal_struct.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagDialPlan.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagFsmCfg.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/message.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagCCB.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Timer.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagTimer.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/timer.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagCommon.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/voiceCommon.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/logarea.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSag.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/string \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/std/bastring.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/cstddef \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/std/straits.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/cctype \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/cstring \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/alloc.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_config.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/powerpc-wrs-vxworks/include/_G_config.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_alloc.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/new \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/exception \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/iterator \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_relops.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/iostream.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/streambuf.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/libio.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stdio-lock.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_iterator.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/std/bastring.cc \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/map \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_tree.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_algobase.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_pair.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/type_traits.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/new.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_construct.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_function.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_map.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_multimap.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/list \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_uninitialized.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_list.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/vector \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_vector.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_bvector.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/log.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagFsm.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSAGTimer.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/CallSignalMsg.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Message.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/voice_msgs_struct.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/cpe_msgs_struct.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagCfg.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagStruct.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/localSagFsmProc.cpp_objects
+localSagFsmProc.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/localSagFsmProc.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/localSagGrpCCB.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/localSagGrpCCB.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagGrpCCB.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Timer.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Message.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComEntity.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/PtrList.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/dataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagTimer.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/timer.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagCommon.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/voiceCommon.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/logarea.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/localSagGrpCCB.cpp_objects
+localSagGrpCCB.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/localSagGrpCCB.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/localSagGrpSrv.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/localSagGrpSrv.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagGrpCCB.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Timer.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Message.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComEntity.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/PtrList.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/dataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagTimer.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/timer.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagCommon.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/voiceCommon.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/logarea.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSag.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/string \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/std/bastring.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/cstddef \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/std/straits.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/cctype \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/cstring \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/alloc.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_config.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/powerpc-wrs-vxworks/include/_G_config.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_alloc.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/new \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/exception \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/iterator \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_relops.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/iostream.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/streambuf.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/libio.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stdio-lock.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_iterator.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/std/bastring.cc \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/map \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_tree.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_algobase.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_pair.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/type_traits.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/new.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_construct.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_function.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_map.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_multimap.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/list \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_uninitialized.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_list.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/vector \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_vector.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_bvector.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/log.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagFsm.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/message.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagCCB.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSAGTimer.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/CallSignalMsg.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/voice_msgs_struct.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/cpe_msgs_struct.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/localSagGrpSrv.cpp_objects
+localSagGrpSrv.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/localSagGrpSrv.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/localSagSrvCfgFile.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/localSagSrvCfgFile.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSag.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/string \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/std/bastring.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/cstddef \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/std/straits.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/cctype \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/cstring \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/alloc.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_config.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/powerpc-wrs-vxworks/include/_G_config.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_alloc.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/new \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/exception \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/iterator \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_relops.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/iostream.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/streambuf.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/libio.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stdio-lock.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_iterator.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/std/bastring.cc \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/map \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_tree.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_algobase.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_pair.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/type_traits.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/new.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_construct.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_function.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_map.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_multimap.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/list \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_uninitialized.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_list.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/vector \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_vector.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_bvector.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/dataType.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagCommon.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/voiceCommon.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/logarea.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/CallSignalMsg.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Message.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComEntity.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/PtrList.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/voice_msgs_struct.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/cpe_msgs_struct.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagFsm.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/message.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagCCB.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Timer.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagTimer.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/timer.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSAGTimer.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagGrpCCB.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/callSignalMsg.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/localSagSrvCfgFile.cpp_objects
+localSagSrvCfgFile.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/localSagSrvCfgFile.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/localSagTask.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/localSagTask.cpp_dependencies
+$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/dataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/MsgQueue.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagTask.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BizTask.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Task.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComEntity.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/PtrList.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSag.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/string \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/std/bastring.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/cstddef \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/std/straits.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/cctype \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/cstring \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/alloc.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_config.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/powerpc-wrs-vxworks/include/_G_config.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_alloc.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/new \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/exception \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/iterator \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_relops.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/iostream.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/streambuf.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/libio.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stdio-lock.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_iterator.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/std/bastring.cc \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/map \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_tree.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_algobase.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_pair.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/type_traits.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/new.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_construct.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_function.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_map.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_multimap.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/list \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_uninitialized.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_list.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/vector \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_vector.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_bvector.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/log.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagCommon.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/voiceCommon.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/logarea.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagCCB.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Timer.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Message.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagTimer.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/timer.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagFsm.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/message.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSAGTimer.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/CallSignalMsg.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/voice_msgs_struct.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/cpe_msgs_struct.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/localSagTask.cpp_objects
+localSagTask.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/localSagTask.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/localSagTimer.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/localSagTimer.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagMsgID.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagTimer.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/dataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/timer.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Message.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComEntity.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/PtrList.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/tVoice.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BizTask.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Task.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/voiceFsm.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/typeinfo \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/exception \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/fsm.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/voiceCommon.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/logarea.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/VAC_session_interface.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/timeoutVoiceMsg.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/Voice_msgs_struct.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/map \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_tree.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_algobase.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_config.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/powerpc-wrs-vxworks/include/_G_config.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_relops.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_pair.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/type_traits.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/new.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/new \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/iostream.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/streambuf.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/libio.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stdio-lock.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_iterator.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_alloc.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_construct.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_function.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_map.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_multimap.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/list \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_uninitialized.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_list.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/localSagTimer.cpp_objects
+localSagTimer.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/localSagTimer.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/tVoice.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/tVoice.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_common/APFramework/H/MsgQueue.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Message.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComEntity.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/PtrList.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/dataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/voiceFSM.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/typeinfo \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/exception \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/fsm.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/timer.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/voiceCommon.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/logarea.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/VAC_session_interface.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/timeoutVoiceMsg.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/Voice_msgs_struct.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/map \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_tree.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_algobase.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_config.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/powerpc-wrs-vxworks/include/_G_config.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_relops.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_pair.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/type_traits.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/new.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/new \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/iostream.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/streambuf.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/libio.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stdio-lock.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_iterator.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_alloc.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_construct.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_function.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_map.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_multimap.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/list \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_uninitialized.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_list.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/tvoice.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BizTask.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Task.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/voiceFsm.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVDR/H/tVDR.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/voicecfg.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/NATAP/natpi.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Timer.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVCR/H/tVCR.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/tVoice.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/voice_msgs_struct.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/CallSignalMsg.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/cpe_msgs_struct.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagTask.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSag.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/string \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/std/bastring.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/cstddef \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/std/straits.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/cctype \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/cstring \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/alloc.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/iterator \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/std/bastring.cc \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/vector \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_vector.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_bvector.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagCommon.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagCCB.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagTimer.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagFsm.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/message.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSAGTimer.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/tVoice.cpp_objects
+tVoice.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/tVoice.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/voiceFSM.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/voiceFSM.cpp_dependencies
+$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/VoiceFSM.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/typeinfo \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/exception \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/dataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/fsm.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/timer.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Message.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComEntity.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/PtrList.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/voiceCommon.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/logarea.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/VAC_session_interface.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/timeoutVoiceMsg.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/Voice_msgs_struct.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/map \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_tree.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_algobase.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_config.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/powerpc-wrs-vxworks/include/_G_config.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_relops.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_pair.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/type_traits.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/new.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/new \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/iostream.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/streambuf.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/libio.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stdio-lock.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_iterator.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_alloc.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_construct.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_function.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_map.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_multimap.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/list \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_uninitialized.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_list.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/COMMON/L3voiceMsgID.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/L3L2MessageID.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/COMMON/L3OAMMessageId.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/tVoice.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BizTask.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Task.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/voiceFsm.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/voiceData.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/VAC_Voice_Data.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/VDR_Voice_Data.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/APASSERT.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/commessage.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/callsignalmsg.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/voice_msgs_struct.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/cpe_msgs_struct.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/othermsg.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/voiceToolFunc.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/vac_voice_data.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/L3L2MessageId.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/NATAP/natpi.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Timer.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/h/L3OamCfgCommon.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/OAM/L3OamCommon.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVCR/H/tVCR.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/CallSignalMsg.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/voicecfg.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/bts_bsp/McWill_L3/sysBtsConfigData.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/bts_bsp/all/sysBootLoad.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/Voicecfg.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/VoiceToolFunc.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/VoiceTone.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/OAM/l3oamsystem.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Transaction.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/h/L3OamSessionIdUpdateReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/h/L3OamModuleBootupNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/h/L3OamBtsRstNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/h/L3OamBtsRegReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/h/L3OamBtsRegRsp.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/h/L3OamBtsRegNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/h/L3OamBtsDataDLoadNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/h/L3OamSetCpeTimeNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/h/L3OOModuleInitNotify.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/TimeOutNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/h/L3OamAlmInfo.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/h/L3OamAlmNotifyOam.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/h/L3L3L2BtsRstCntChangeNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/COMMON/L3EmsMessageId.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/L3CpeMessageId.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/h/L3OamCommonReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/h/L3OamCommonRsp.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/COMMON/l3EmsMessageId.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/h/L3L3L2AuxStateNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/h/L3L3L2McpStateNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/h/L3L3L2RFStateNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/h/L3OamCpuWorkingNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/h/L3OAMCpuAlarmNofity.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/OAM/l3oamcpem.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/h/L3oamCpeRegNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/h/L3oamCpeCommon.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/h/L3OamCpeLocationNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/h/L3OamCpeProfUpdateReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/h/L3OamCpeCommonReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/h/L3OamCpeSwitchOffNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/h/L3OamCpeReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/OAM/L3OamCpeFSM.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/h/L3L3L2CpeRegNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/h/L3OAMAuth.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/L3CPEMessageId.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/COMMON/L3VoiceMsgId.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/OAM/L3OAMcommon.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/h/L3OAMcpeCommon.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/COMMON/ErrorCodeDef.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/LogArea.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/OAM/L3OamRpt.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSag.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/string \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/std/bastring.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/cstddef \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/std/straits.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/cctype \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/cstring \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/alloc.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/iterator \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/std/bastring.cc \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/vector \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_vector.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_bvector.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagCommon.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagCCB.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagTimer.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagFsm.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/message.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSAGTimer.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagCfg.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagDialPlan.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagMsgID.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/localSagStruct.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/voiceFSM.cpp_objects
+voiceFSM.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/voiceFSM.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/voiceTestAssist.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/voiceTestAssist.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/voiceCommon.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/logarea.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/voiceFsm.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/typeinfo \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/exception \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/dataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/fsm.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/timer.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Message.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComEntity.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/PtrList.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/VAC_session_interface.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/timeoutVoiceMsg.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/messages/voicemsgs/H/Voice_msgs_struct.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/map \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_tree.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_algobase.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_config.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/powerpc-wrs-vxworks/include/_G_config.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_relops.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_pair.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/type_traits.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/new.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/new \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/iostream.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/streambuf.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/libio.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stdio-lock.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_iterator.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_alloc.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_construct.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_function.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_map.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_multimap.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/list \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_uninitialized.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_list.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/voiceTestAssist.cpp_objects
+voiceTestAssist.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/voiceTestAssist.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/voiceTone.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/voiceTone.cpp_dependencies
+
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/voiceTone.cpp_objects
+voiceTone.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/voiceTone.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/voiceToolFunc.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/voiceToolFunc.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/voiceToolFunc.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComEntity.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/PtrList.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/dataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/H/VoiceCommon.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/logarea.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/voiceToolFunc.cpp_objects
+voiceToolFunc.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/voiceToolFunc.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> PROJECT_FILES
+$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/voiceFSM.cpp \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/tVoice.cpp \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVCR/SRC/tVCR.cpp \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVDR/SRC/tVDR.cpp \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/NATAP/sha1.c \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/NATAP/md5.c \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/NATAP/NatPi.cpp \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/NATAP/NatAuth.cpp \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/VoiceCfg.cpp \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/voiceToolFunc.cpp \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/localSagTask.cpp \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/localSag.cpp \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/localSagTimer.cpp \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/localSagCfg.cpp \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/localSagFsm.cpp \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/localSagFsmCfg.cpp \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/localSagFsmProc.cpp \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/voiceTestAssist.cpp \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/localSagDialPlan.cpp \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/voiceTone.cpp \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/localSagCCB.cpp \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/localSagGrpSrv.cpp \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/localSagGrpCCB.cpp \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/localSagSrvCfgFile.cpp \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/DBroadCastSrv.cpp \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/dataGrpLink.cpp \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/tVoice/SRC/DBroadCastMsg.cpp \
+	$(PRJ_DIR)/../../../../../prj_bts_split/layer3/NATAP/NatPiApp.cpp
+<END>
+
+<BEGIN> userComments
+<Enter description here>
+<END>
+

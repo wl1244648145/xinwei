@@ -1,0 +1,1660 @@
+Document file - DO NOT EDIT
+
+<BEGIN> BUILD_PPC604gnu_BUILDRULE
+l3oam.out
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_AR
+arppc
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_ARCHIVE
+$(PRJ_DIR)/PPC604gnu/l3oam.a
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_AS
+ccppc
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_CC
+ccppc
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_CC_ARCH_SPEC
+-mcpu=604 -mstrict-align
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_CFLAGS
+-O3 \
+	-mcpu=604 \
+	-mstrict-align \
+	-ansi \
+	-fno-builtin \
+	-I. \
+	-I$(WIND_BASE)/target/h/ \
+	-I$(PRJ_DIR)/../../../../../prj_common/include \
+	-I$(PRJ_DIR)/../../../../../prj_bts/common/h \
+	-I$(PRJ_DIR)/../../../../../prj_bts/layer3/COMMON \
+	-I$(PRJ_DIR)/../../../../../prj_bts/layer3/EmsAgent/H \
+	-I$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h \
+	-I$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/UT \
+	-I$(PRJ_DIR)/../../../../../prj_common/APFramework/ \
+	-I$(PRJ_DIR)/../../../../../prj_common/APFramework/H \
+	-I$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC \
+	-I$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM \
+	-I$(PRJ_DIR)/../../../../../prj_common/APFramework/H \
+	-I$(PRJ_DIR)/../../../../../prj_bts/layer3/UtAgent \
+	-I$(PRJ_DIR)/../../../../../prj_common \
+	-I$(WIND_BASE)/target/config/McWill_L3 \
+	-I$(PRJ_DIR)/../../../../../prj_bts/bts_bsp/src \
+	-I$(PRJ_DIR)/../../../../../prj_bts/common/h \
+	-I$(WIND_BASE)/target/h/drv/timer \
+	-I$(PRJ_DIR)/../../../../../prj_bts/common/PciIf \
+	-I$(PRJ_DIR)/../L3_bsp \
+	-I$(PRJ_DIR)/../../../../../prj_bts/layer3/Bridge \
+	-I$(PRJ_DIR)/../../../../../prj_bts/layer3/DM \
+	-I$(PRJ_DIR)/../../../../../prj_bts/layer3/Snoop \
+	-I$(PRJ_DIR)/../../../../../prj_bts/layer3/Tunnel \
+	-I$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/Data \
+	-I$(PRJ_DIR)/../../../../../prj_bts/layer3/ARP \
+	-I$(PRJ_DIR)/../../../../../prj_bts/layer3/tVCR/H \
+	-I$(PRJ_DIR)/../../../../../prj_bts/layer3/tVDR/H \
+	-I$(PRJ_DIR)/../../../../../prj_bts/layer3/tVoice/H \
+	-I$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/voicemsgs/H \
+	-I$(PRJ_DIR)/../../../../../prj_bts/bts_bsp/McWill_L3 \
+	-I$(PRJ_DIR)/../../../../../prj_bts/layer3/BootTask \
+	-I$(PRJ_DIR)/../../../../../prj_bts/layer3/Diag \
+	-I$(WIND_BASE)/target/config/all \
+	-I$(PRJ_DIR)/../../../../../prj_bts/layer3/tSocket \
+	-I$(PRJ_DIR)/../../../../../prj_bts/layer3/L2PciShell \
+	-DCPU=PPC604 \
+	-DTOOL_FAMILY=gnu \
+	-DTOOL=gnu \
+	-DPRJ_BUILD \
+	-DM_TGT_L3 \
+	-DL2_TX \
+	-fsigned-char \
+	-DNDEBUG \
+	-DL3OAM_CPE_HANDOFF
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_CFLAGS_AS
+-g \
+	-mcpu=604 \
+	-mstrict-align \
+	-ansi \
+	-fno-builtin \
+	-P \
+	-xassembler-with-cpp \
+	-I. \
+	-I$(WIND_BASE)/target/h/ \
+	-DCPU=PPC604 \
+	-DTOOL_FAMILY=gnu \
+	-DTOOL=gnu
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_CPP
+ccppc -E -P
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_HEX_FLAGS
+
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_LD
+ldppc
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_LDDEPS
+
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_LDFLAGS
+-X -N
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_LD_PARTIAL
+ccppc -r -nostdlib -Wl,-X
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_LD_PARTIAL_FLAGS
+-X -r
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_NM
+nmppc
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_OPTION_DEFINE_MACRO
+-D
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_OPTION_DEPEND
+-M -w
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_OPTION_GENERATE_DEPENDENCY_FILE
+-MD
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_OPTION_INCLUDE_DIR
+-I
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_OPTION_LANG_C
+-xc
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_OPTION_UNDEFINE_MACRO
+-U
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_POST_BUILD_RULE
+
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_PRJ_LIBS
+$(PRJ_DIR)/../APFramework\L3_lib\ApFrmWk.a \
+	$(PRJ_DIR)/../l3data/l3_lib/l3data.a \
+	$(PRJ_DIR)/../L3_boot/l3_lib/L3_boot.a \
+	$(PRJ_DIR)/../L2If/L3_lib/L2If.a \
+	$(PRJ_DIR)/../tVoice/L3_lib/Voice.a \
+	$(PRJ_DIR)/../Messages\l3_lib\Messages.a \
+	$(PRJ_DIR)/../APFramework\L3_lib\ApFrmWk.a \
+	$(PRJ_DIR)/../Diag/l3_lib/Diag.a \
+	
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_SIZE
+sizeppc
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_TOOL_FAMILY
+gnu
+<END>
+
+<BEGIN> BUILD_PPC604gnu_RO_DEPEND_PATH
+{$(WIND_BASE)/target/h/} \
+	{$(WIND_BASE)/target/src/} \
+	{$(WIND_BASE)/target/config/}
+<END>
+
+<BEGIN> BUILD_PPC604gnu_TC
+::tc_PPC604gnu
+<END>
+
+<BEGIN> BUILD_RULE_archive
+
+<END>
+
+<BEGIN> BUILD_RULE_l3oam.out
+
+<END>
+
+<BEGIN> BUILD_RULE_l3oam.pl
+
+<END>
+
+<BEGIN> BUILD_RULE_objects
+
+<END>
+
+<BEGIN> BUILD__CURRENT
+l3_lib
+<END>
+
+<BEGIN> BUILD__LIST
+PPC604gnu l3_lib
+<END>
+
+<BEGIN> BUILD_l3_lib_BUILDRULE
+archive
+<END>
+
+<BEGIN> BUILD_l3_lib_MACRO_AR
+arppc
+<END>
+
+<BEGIN> BUILD_l3_lib_MACRO_ARCHIVE
+$(PRJ_DIR)/l3_lib/l3oam.a
+<END>
+
+<BEGIN> BUILD_l3_lib_MACRO_AS
+ccppc
+<END>
+
+<BEGIN> BUILD_l3_lib_MACRO_CC
+ccppc
+<END>
+
+<BEGIN> BUILD_l3_lib_MACRO_CC_ARCH_SPEC
+-mcpu=604 -mstrict-align
+<END>
+
+<BEGIN> BUILD_l3_lib_MACRO_CFLAGS
+-O3 \
+	-mcpu=604 \
+	-mstrict-align \
+	-ansi \
+	-fno-builtin \
+	-I. \
+	-I$(WIND_BASE)/target/h/ \
+	-I$(PRJ_DIR)/../../../../../prj_common/include \
+	-I$(PRJ_DIR)/../../../../../prj_bts/common/h \
+	-I$(PRJ_DIR)/../../../../../prj_bts/layer3/COMMON \
+	-I$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h \
+	-I$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/UT \
+	-I$(PRJ_DIR)/../../../../../prj_common/APFramework/ \
+	-I$(PRJ_DIR)/../../../../../prj_common/APFramework/H \
+	-I$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC \
+	-I$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM \
+	-I$(PRJ_DIR)/../../../../../prj_common/APFramework/H \
+	-I$(PRJ_DIR)/../../../../../prj_bts/layer3/UtAgent \
+	-I$(PRJ_DIR)/../../../../../prj_common \
+	-I$(WIND_BASE)/target/config/McWill_L3 \
+	-I$(PRJ_DIR)/../../../../../prj_bts/bts_bsp/src \
+	-I$(PRJ_DIR)/../../../../../prj_bts/common/h \
+	-I$(WIND_BASE)/target/h/drv/timer \
+	-I$(PRJ_DIR)/../../../../../prj_bts/common/PciIf \
+	-I$(PRJ_DIR)/../L3_app \
+	-I$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/Data \
+	-I$(PRJ_DIR)/../../../../../prj_bts/layer3/tVoice/H \
+	-I$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/voicemsgs/H \
+	-I$(PRJ_DIR)/../../../../../prj_bts/layer3/BootTask \
+	-I$(PRJ_DIR)/../../../../../prj_bts/layer3/Diag \
+	-I$(WIND_BASE)/target/config/all \
+	-I$(WIND_BASE)/target/h/sys \
+	-I$(PRJ_DIR)/../../../../../prj_bts/layer3/tSocket \
+	-DCPU=PPC604 \
+	-DTOOL_FAMILY=gnu \
+	-DTOOL=gnu \
+	-DPRJ_BUILD \
+	-DM_TGT_L3 \
+        -DL2_TX \
+	-fsigned-char \
+	-DNDEBUG
+<END>
+
+<BEGIN> BUILD_l3_lib_MACRO_CFLAGS_AS
+-g \
+	-mcpu=604 \
+	-mstrict-align \
+	-ansi \
+	-fno-builtin \
+	-P \
+	-xassembler-with-cpp \
+	-I. \
+	-I$(WIND_BASE)/target/h/ \
+	-DCPU=PPC604 \
+	-DTOOL_FAMILY=gnu \
+	-DTOOL=gnu
+<END>
+
+<BEGIN> BUILD_l3_lib_MACRO_CPP
+ccppc -E -P
+<END>
+
+<BEGIN> BUILD_l3_lib_MACRO_HEX_FLAGS
+
+<END>
+
+<BEGIN> BUILD_l3_lib_MACRO_LD
+ldppc
+<END>
+
+<BEGIN> BUILD_l3_lib_MACRO_LDDEPS
+
+<END>
+
+<BEGIN> BUILD_l3_lib_MACRO_LDFLAGS
+-X -N
+<END>
+
+<BEGIN> BUILD_l3_lib_MACRO_LD_PARTIAL
+ccppc -r -nostdlib -Wl,-X
+<END>
+
+<BEGIN> BUILD_l3_lib_MACRO_LD_PARTIAL_FLAGS
+-X -r
+<END>
+
+<BEGIN> BUILD_l3_lib_MACRO_NM
+nmppc
+<END>
+
+<BEGIN> BUILD_l3_lib_MACRO_OPTION_DEFINE_MACRO
+-D
+<END>
+
+<BEGIN> BUILD_l3_lib_MACRO_OPTION_DEPEND
+-M -w
+<END>
+
+<BEGIN> BUILD_l3_lib_MACRO_OPTION_GENERATE_DEPENDENCY_FILE
+-MD
+<END>
+
+<BEGIN> BUILD_l3_lib_MACRO_OPTION_INCLUDE_DIR
+-I
+<END>
+
+<BEGIN> BUILD_l3_lib_MACRO_OPTION_LANG_C
+-xc
+<END>
+
+<BEGIN> BUILD_l3_lib_MACRO_OPTION_UNDEFINE_MACRO
+-U
+<END>
+
+<BEGIN> BUILD_l3_lib_MACRO_POST_BUILD_RULE
+
+<END>
+
+<BEGIN> BUILD_l3_lib_MACRO_PRJ_LIBS
+
+<END>
+
+<BEGIN> BUILD_l3_lib_MACRO_SIZE
+sizeppc
+<END>
+
+<BEGIN> BUILD_l3_lib_MACRO_TOOL_FAMILY
+gnu
+<END>
+
+<BEGIN> BUILD_l3_lib_RO_DEPEND_PATH
+{$(WIND_BASE)/target/h/} \
+	{$(WIND_BASE)/target/src/} \
+	{$(WIND_BASE)/target/config/}
+<END>
+
+<BEGIN> BUILD_l3_lib_TC
+::tc_PPC604gnu
+<END>
+
+<BEGIN> CORE_INFO_TYPE
+::prj_vxApp
+<END>
+
+<BEGIN> CORE_INFO_VERSION
+2.2
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/InitSystem.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/InitSystem.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_common/APFramework/SRC/AfwInit.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/Diag/L3TaskDiag.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BizTask.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Task.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComEntity.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/PtrList.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/dataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/TaskDef.h \
+	$(PRJ_DIR)/../../../../../prj_bts/common/h/BtsConfig.h \
+	$(PRJ_DIR)/../../../../../prj_bts/common/h/DiagDef.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Timer.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Message.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/logArea.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/log.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/BootTask/l3BootTask.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(PRJ_DIR)/../L3_app/prjParams.h \
+	$(PRJ_DIR)/../../../../../prj_bts/common/h/btsConfig.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamSystem.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Transaction.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamSessionIdUpdateReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamModuleBootupNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamBtsRstNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamBtsRegReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamBtsRegRsp.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamBtsRegNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamCommon.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamBtsDataDLoadNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamSetCpeTimeNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OOModuleInitNotify.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/TimeOutNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamAlmInfo.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamAlmNotifyOam.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3L3L2BtsRstCntChangeNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/COMMON/L3EmsMessageId.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/L3CpeMessageId.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/L3L2MessageId.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/COMMON/L3OamMessageId.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCommonReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCommonRsp.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3L3L2AuxStateNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3L3L2McpStateNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3L3L2RFStateNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCpuWorkingNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OAMCpuAlarmNofity.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/InitSystem.cpp_objects
+InitSystem.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/InitSystem.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamAlm.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamAlm.cpp_dependencies
+$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(PRJ_DIR)/../L3_app/prjParams.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamAlm.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/map \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_tree.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_algobase.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_config.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/powerpc-wrs-vxworks/include/_G_config.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_relops.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_pair.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/type_traits.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/new.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/new \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/exception \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/iostream.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/streambuf.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/libio.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stdio-lock.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_iterator.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_alloc.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_construct.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_function.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_map.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_multimap.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/list \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_uninitialized.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_list.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BizTask.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Task.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComEntity.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/PtrList.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/dataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Timer.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Message.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamAlmNotifyOam.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamAlmNotifyEms.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamAlmInfo.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamCommon.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/COMMON/L3EmsMessageId.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/L3CpeMessageId.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/L3L2MessageId.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/COMMON/L3OamMessageId.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OODeleteAlarmNotify.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/MsgQueue.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/COMMON/ErrorCodeDef.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/LogArea.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamAlarmHandleNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgCommon.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3L3L2BtsConfigSynPower.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamAlm.cpp_objects
+L3OamAlm.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamAlm.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamCfg.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamCfg.cpp_dependencies
+$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/iostream \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/iostream.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/streambuf.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/libio.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/powerpc-wrs-vxworks/include/_G_config.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stdio-lock.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/iomanip \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/iomanip.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/MsgQueue.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/dataType.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/COMMON/L3EmsMessageId.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamCfg.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BizTask.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Task.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComEntity.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/PtrList.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Timer.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Message.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Transaction.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamCommon.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCommonReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCommonRsp.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/L3CpeMessageId.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/L3L2MessageId.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/COMMON/L3OamMessageId.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgBtsGenDataReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgCommon.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgAirLinkMisc.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgAirLinkReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3L3L2CfgAirLinkReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgBillingDataReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgBtsNeibListReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgBtsRstReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgCalGenDataReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgCalDataReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgCalRstGenNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgCalRstNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgCfgCalReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgCalActionReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgCalibrationTimer.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgCpeServiceReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgDataServiceReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgGpsDataReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgL1GenDataReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgPerfLogReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgRMPolicy.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgTempAlarmReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgTosReq.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/TimeOutNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgRfReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OOModuleInitNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgInitFailNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgArpDataServiceReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgDmDataServiceReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgEbDataServiceReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgSnoopDataServiceReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamBtsRstNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgACLReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgDelACLReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgSFIDReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgNeighbourBtsLoadInfo.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgBtsRepeaterReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/COMMON/ErrorCodeDef.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/LogArea.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamAlarmHandleNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamAlmNotifyOam.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamAlmInfo.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamGetBoardsStateRsp.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3L2CfgCommon.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/Data/L3DataNotifyRefreshJammingNeighbor.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/Data/L3DataMessages.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/COMMON/L3DataTypes.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/COMMON/L3DataCommon.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/BootTask/L3BootTask.h \
+	$(PRJ_DIR)/../L3_app/prjParams.h \
+	$(PRJ_DIR)/../../../../../prj_bts/common/h/btsConfig.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgGetRFData.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/COMMON/L3VoiceMsgID.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/L3L2MessageID.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/COMMON/L3OAMMessageId.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/tSocket/L3DataSocketMsgs.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamCfg.cpp_objects
+L3OamCfg.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamCfg.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamCpeFSM.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamCpeFSM.cpp_dependencies
+$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamCpeFSM.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/map \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_tree.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_algobase.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_config.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/powerpc-wrs-vxworks/include/_G_config.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_relops.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_pair.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/type_traits.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/new.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/new \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/exception \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/iostream.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/streambuf.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/libio.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stdio-lock.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_iterator.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_alloc.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_construct.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_function.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_map.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_multimap.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/fsm.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3oamCpeCommon.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgCommon.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamCommon.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/dataType.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/COMMON/L3EmsMessageId.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/L3CpeMessageId.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/L3L2MessageId.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/COMMON/L3OamMessageId.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3L3L2CpeRegNotify.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Message.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComEntity.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/PtrList.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Timer.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamCpeTrans.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamCpeState.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3L3CpeProfUpdateReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3oamCpeRegNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3oamCfgCommon.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/TimeOutNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCpeLocationNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCpeProfUpdateReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCpeSwitchOffNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCommonRsp.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamCpeM.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/list \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_uninitialized.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_list.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BizTask.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Task.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCpeCommonReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCpeReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/COMMON/ErrorCodeDef.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/LogArea.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamCpeFSM.cpp_objects
+L3OamCpeFSM.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamCpeFSM.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamCpeM.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamCpeM.cpp_dependencies
+$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/MsgQueue.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamCpeM.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/map \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_tree.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_algobase.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_config.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/powerpc-wrs-vxworks/include/_G_config.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_relops.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_pair.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/type_traits.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/new.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/new \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/exception \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/iostream.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/streambuf.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/libio.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stdio-lock.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_iterator.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_alloc.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_construct.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_function.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_map.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_multimap.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/list \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_uninitialized.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_list.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BizTask.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Task.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComEntity.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/PtrList.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/dataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Timer.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Message.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/TimeOutNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3oamCpeRegNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3oamCpeCommon.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgCommon.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamCommon.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCpeLocationNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCpeProfUpdateReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCpeCommonReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCpeSwitchOffNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCpeReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamCpeFSM.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/fsm.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/COMMON/L3EmsMessageId.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/L3CpeMessageId.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/L3L2MessageId.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/COMMON/L3OamMessageId.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3L3L2CpeRegNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/COMMON/ErrorCodeDef.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/LogArea.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Transaction.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCommonRsp.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCommonReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCommonRspFromCpe.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3L3L2CpeProfUpdateNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgBtsNeibListReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamCpeTrans.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamCpeState.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3L3CpeProfUpdateReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3oamCfgCommon.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgNeighbourBtsLoadInfo.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamCpeM.cpp_objects
+L3OamCpeM.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamCpeM.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamCpeState.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamCpeState.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamCpeState.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Message.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComEntity.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/PtrList.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/dataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/fsm.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/L3CPEMessageId.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamCpeFSM.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/map \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_tree.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_algobase.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_config.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/powerpc-wrs-vxworks/include/_G_config.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_relops.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_pair.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/type_traits.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/new.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/new \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/exception \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/iostream.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/streambuf.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/libio.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stdio-lock.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_iterator.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_alloc.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_construct.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_function.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_map.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_multimap.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3oamCpeCommon.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgCommon.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamCommon.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/COMMON/L3EmsMessageId.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/L3L2MessageId.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/COMMON/L3OamMessageId.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3L3L2CpeRegNotify.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Timer.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamCpeState.cpp_objects
+L3OamCpeState.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamCpeState.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamCpeTrans.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamCpeTrans.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Message.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComEntity.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/PtrList.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/dataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/L3CPEMessageId.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BizTask.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Task.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamCpeM.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/map \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_tree.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_algobase.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_config.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/powerpc-wrs-vxworks/include/_G_config.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_relops.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_pair.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/type_traits.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/new.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/new \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/exception \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/iostream.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/streambuf.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/libio.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stdio-lock.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_iterator.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_alloc.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_construct.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_function.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_map.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_multimap.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/list \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_uninitialized.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_list.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Timer.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/TimeOutNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3oamCpeRegNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3oamCpeCommon.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgCommon.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamCommon.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCpeLocationNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCpeProfUpdateReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCpeCommonReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCpeSwitchOffNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCpeReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamCpeFSM.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/fsm.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/COMMON/L3EmsMessageId.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/L3L2MessageId.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/COMMON/L3OamMessageId.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3L3L2CpeRegNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/COMMON/ErrorCodeDef.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/LogArea.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Transaction.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamCpeTrans.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamCpeState.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3L3CpeProfUpdateReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3oamCfgCommon.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3L3L2CpeProfUpdateNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCommonRsp.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3L3CfgVoicePortNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3L3CfgDMDataNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCommonReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgBtsRepeaterReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgBtsNeibListReq.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamCpeTrans.cpp_objects
+L3OamCpeTrans.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamCpeTrans.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamDiag.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamDiag.cpp_dependencies
+$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(PRJ_DIR)/../L3_app/prjParams.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BizTask.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Task.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComEntity.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/PtrList.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/dataType.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamDiag.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/LogArea.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamCommon.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamDiag.cpp_objects
+L3OamDiag.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamDiag.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamFile.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamFile.cpp_dependencies
+$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(PRJ_DIR)/../L3_app/prjParams.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/MsgQueue.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/dataType.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamFile.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/list \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_algobase.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_config.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/powerpc-wrs-vxworks/include/_G_config.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_relops.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_pair.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/type_traits.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/new.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/new \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/exception \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/iostream.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/streambuf.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/libio.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stdio-lock.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_iterator.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_alloc.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_construct.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_uninitialized.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_list.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BizTask.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Task.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComEntity.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/PtrList.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Timer.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Message.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamUpdateCpeSWRateNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamUpdateCpeSWResultNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamUpdateCpeSWReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamCommon.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCPESWDLoadReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamFileCommon.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamBtsSWUpdateReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamBtsSWDLoadReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamBCCPESWRsp.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamBCCPESWReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamBCCPESWRateNotify.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/TimeOutNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3L3CpeSWDLReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3L3CpeSWDLPackReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3L3CpeSWDLPackRsp.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3L3CpeSWDLResultNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3L3BroadcastUTSWTimer.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamUnicastUTSWReqFail.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamBtsRstNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/COMMON/L3EmsMessageId.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/L3CpeMessageId.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/L3L2MessageId.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/COMMON/L3OamMessageId.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCommonReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCommonRsp.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCommonRspFromCpe.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Transaction.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/COMMON/ErrorCodeDef.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/LogArea.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamFileLoadNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/l3oamcfg.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgBtsGenDataReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgCommon.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgAirLinkMisc.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgAirLinkReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3L3L2CfgAirLinkReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgBillingDataReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgBtsNeibListReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgBtsRstReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgCalGenDataReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgCalDataReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgCalRstGenNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgCalRstNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgCfgCalReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgCalActionReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgCalibrationTimer.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgCpeServiceReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgDataServiceReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgGpsDataReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgL1GenDataReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgPerfLogReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgRMPolicy.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgTempAlarmReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgTosReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgRfReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OOModuleInitNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgInitFailNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgArpDataServiceReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgDmDataServiceReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgEbDataServiceReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgSnoopDataServiceReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgACLReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgDelACLReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgSFIDReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgNeighbourBtsLoadInfo.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgBtsRepeaterReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/l3oamcfgcommon.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamFile.cpp_objects
+L3OamFile.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamFile.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamFtpClient.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamFtpClient.cpp_dependencies
+$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(PRJ_DIR)/../L3_app/prjParams.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamFtpClient.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BizTask.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Task.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComEntity.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/PtrList.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/dataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Message.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/COMMON/L3EmsMessageId.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/L3CpeMessageId.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/L3L2MessageId.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/COMMON/L3OamMessageId.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamCommon.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamFileLoadNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamFileCommon.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/MsgQueue.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCommonRsp.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/COMMON/ErrorCodeDef.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/LogArea.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamFile.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/list \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_algobase.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_config.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/powerpc-wrs-vxworks/include/_G_config.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_relops.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_pair.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/type_traits.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/new.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/new \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/exception \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/iostream.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/streambuf.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/libio.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stdio-lock.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_iterator.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_alloc.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_construct.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_uninitialized.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_list.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Timer.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamUpdateCpeSWRateNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamUpdateCpeSWResultNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamUpdateCpeSWReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCPESWDLoadReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamBtsSWUpdateReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamBtsSWDLoadReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamBCCPESWRsp.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamBCCPESWReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamBCCPESWRateNotify.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/TimeOutNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3L3CpeSWDLReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3L3CpeSWDLPackReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3L3CpeSWDLPackRsp.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3L3CpeSWDLResultNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3L3BroadcastUTSWTimer.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamUnicastUTSWReqFail.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamBtsRstNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCommonReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCommonRspFromCpe.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3_BTS_PM.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3_BTS_PMMessageID.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/BootTask/l3BootTask.h \
+	$(PRJ_DIR)/../../../../../prj_bts/common/h/btsConfig.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamFtpClient.cpp_objects
+L3OamFtpClient.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamFtpClient.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamGps.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamGps.cpp_dependencies
+$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(PRJ_DIR)/../L3_app/prjParams.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamGps.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/list \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_algobase.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_config.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/powerpc-wrs-vxworks/include/_G_config.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_relops.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_pair.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/type_traits.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/new.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/new \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/exception \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/iostream.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/streambuf.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/libio.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stdio-lock.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_iterator.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_alloc.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_construct.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_uninitialized.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_list.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BizTask.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Task.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComEntity.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/PtrList.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/dataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Timer.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Message.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/COMMON/L3OamMessageId.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamCommon.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgCommon.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/MsgQueue.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/COMMON/ErrorCodeDef.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/LogArea.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/COMMON/L3EmsMessageId.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgGpsDataReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamAlmInfo.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamAlmNotifyOam.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCommonReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgGpsLocNotify.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Transaction.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCommonRsp.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/L3L2MessageId.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgL1GenDataReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamAlm.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/map \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_tree.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_function.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_map.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_multimap.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamAlmNotifyEms.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/L3CpeMessageId.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OODeleteAlarmNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamCfg.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgBtsGenDataReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgAirLinkMisc.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgAirLinkReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3L3L2CfgAirLinkReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgBillingDataReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgBtsNeibListReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgBtsRstReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgCalGenDataReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgCalDataReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgCalRstGenNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgCalRstNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgCfgCalReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgCalActionReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgCalibrationTimer.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgCpeServiceReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgDataServiceReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgPerfLogReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgRMPolicy.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgTempAlarmReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgTosReq.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/TimeOutNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgRfReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OOModuleInitNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgInitFailNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgArpDataServiceReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgDmDataServiceReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgEbDataServiceReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgSnoopDataServiceReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamBtsRstNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgACLReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgDelACLReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgSFIDReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgNeighbourBtsLoadInfo.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgBtsRepeaterReq.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamGps.cpp_objects
+L3OamGps.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamGps.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamSystem.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamSystem.cpp_dependencies
+$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(PRJ_DIR)/../L3_app/prjParams.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/MsgQueue.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/COMMON/L3EmsMessageId.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/L3CpeMessageId.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/L3L2MessageId.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/COMMON/L3OamMessageId.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamCommon.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/dataType.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/COMMON/ErrorCodeDef.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/LogArea.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamSystem.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BizTask.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Task.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComEntity.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/PtrList.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Message.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Timer.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Transaction.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamSessionIdUpdateReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamModuleBootupNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamBtsRstNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamBtsRegReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamBtsRegRsp.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamBtsRegNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamBtsDataDLoadNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamSetCpeTimeNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OOModuleInitNotify.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/TimeOutNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamAlmInfo.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamAlmNotifyOam.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3L3L2BtsRstCntChangeNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCommonReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCommonRsp.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3L3L2AuxStateNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3L3L2McpStateNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3L3L2RFStateNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCpuWorkingNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OAMCpuAlarmNofity.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamAlm.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/map \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_tree.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_algobase.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_config.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/powerpc-wrs-vxworks/include/_G_config.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_relops.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_pair.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/type_traits.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/new.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/new \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/exception \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/iostream.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/streambuf.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/libio.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stdio-lock.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_iterator.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_alloc.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_construct.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_function.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_map.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_multimap.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/list \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_uninitialized.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_list.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamAlmNotifyEms.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OODeleteAlarmNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamGps.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgCommon.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamCfg.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgBtsGenDataReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgAirLinkMisc.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgAirLinkReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3L3L2CfgAirLinkReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgBillingDataReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgBtsNeibListReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgBtsRstReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgCalGenDataReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgCalDataReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgCalRstGenNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgCalRstNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgCfgCalReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgCalActionReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgCalibrationTimer.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgCpeServiceReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgDataServiceReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgGpsDataReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgL1GenDataReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgPerfLogReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgRMPolicy.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgTempAlarmReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgTosReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgRfReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgInitFailNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgArpDataServiceReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgDmDataServiceReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgEbDataServiceReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgSnoopDataServiceReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgACLReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgDelACLReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgSFIDReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgNeighbourBtsLoadInfo.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCfgBtsRepeaterReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamFile.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamUpdateCpeSWRateNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamUpdateCpeSWResultNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamUpdateCpeSWReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCPESWDLoadReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamFileCommon.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamBtsSWUpdateReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamBtsSWDLoadReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamBCCPESWRsp.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamBCCPESWReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamBCCPESWRateNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3L3CpeSWDLReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3L3CpeSWDLPackReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3L3CpeSWDLPackRsp.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3L3CpeSWDLResultNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3L3BroadcastUTSWTimer.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamUnicastUTSWReqFail.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCommonRspFromCpe.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamFtpClient.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamFileLoadNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamCpeM.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3oamCpeRegNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3oamCpeCommon.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCpeLocationNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCpeProfUpdateReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCpeCommonReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCpeSwitchOffNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCpeReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamCpeFSM.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/fsm.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3L3L2CpeRegNotify.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/loadVersion.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3_BTS_PM.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3_BTS_PMMessageID.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamDiag.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/Data/L3DataNotifyBTSPubIP.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/Data/L3DataMessages.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/COMMON/L3DataTypes.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/COMMON/L3DataCommon.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/Data/L3DataTunnelRequestBase.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/Data/L3DataTunnelResponseBase.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/tSocket/L3DataSocket.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/vector \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_vector.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_bvector.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/tSocket/L3DataSocketTable.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/tSocket/L3DataSocketMsgs.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/tSocket/L3DataSocketMsgIds.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/tSocket/L3DataSocketErrCode.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/COMMON/L3DataMsgId.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamSystem.cpp_objects
+L3OamSystem.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamSystem.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3_BTS_PM.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3_BTS_PM.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3_BTS_PM.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3_BTS_PMMessageID.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/COMMON/L3EmsMessageId.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/MsgQueue.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Timer.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Message.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComEntity.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/PtrList.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/dataType.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(PRJ_DIR)/../L3_app/prjParams.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BizTask.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Task.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/COMMON/L3OAMMessageId.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/COMMON/l3dataapi.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamFile.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/list \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_algobase.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_config.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/powerpc-wrs-vxworks/include/_G_config.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_relops.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_pair.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/type_traits.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/new.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/new \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/exception \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/iostream.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/streambuf.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/libio.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stdio-lock.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_iterator.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_alloc.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_construct.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_uninitialized.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/include/g++-3/stl_list.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamUpdateCpeSWRateNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamUpdateCpeSWResultNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamUpdateCpeSWReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamCommon.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCPESWDLoadReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamFileCommon.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamBtsSWUpdateReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamBtsSWDLoadReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamBCCPESWRsp.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamBCCPESWReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamBCCPESWRateNotify.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/TimeOutNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3L3CpeSWDLReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3L3CpeSWDLPackReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3L3CpeSWDLPackRsp.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3L3CpeSWDLResultNotify.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3L3BroadcastUTSWTimer.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamUnicastUTSWReqFail.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamBtsRstNotify.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/L3CpeMessageId.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/L3L2MessageId.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCommonReq.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCommonRsp.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/messages/h/L3OamCommonRspFromCpe.h \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/COMMON/ErrorCodeDef.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/LogArea.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3_BTS_PM.cpp_objects
+L3_BTS_PM.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3_BTS_PM.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/inflateLib.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/inflateLib.c_dependencies
+
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/inflateLib.c_objects
+inflateLib.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/inflateLib.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/l3oamcommon.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/l3oamcommon.cpp_dependencies
+$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamCommon.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/datatype.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Log.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/BtsLog.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/ComMessage.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Object.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/stdhdr.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/Mutex.h \
+	$(PRJ_DIR)/../../../../../prj_common/APFramework/H/taskdef.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/taskPriority.h \
+	$(PRJ_DIR)/../../../../../prj_common/include/dataType.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(PRJ_DIR)/../L3_app/prjParams.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/l3oamcommon.cpp_objects
+l3oamcommon.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/l3oamcommon.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> PROJECT_FILES
+$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamSystem.cpp \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamCpeFSM.cpp \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamCpeState.cpp \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamCpeTrans.cpp \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamCpeM.cpp \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamCfg.cpp \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamFile.cpp \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamFtpClient.cpp \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamGps.cpp \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/inflateLib.c \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamAlm.cpp \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/InitSystem.cpp \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3_BTS_PM.cpp \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/l3oamcommon.cpp \
+	$(PRJ_DIR)/../../../../../prj_bts/layer3/OAM/L3OamDiag.cpp
+<END>
+
+<BEGIN> userComments
+<Enter description here>
+<END>
+
